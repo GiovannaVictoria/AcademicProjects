@@ -1,0 +1,15 @@
+#erro {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: beige;
+    align-items: center;
+}
+
+#sucesso {
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid green;
+    background-color: beige;
+    align-items: center;
+}
