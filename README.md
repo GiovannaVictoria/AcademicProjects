@@ -7,6 +7,7 @@ Academic projects developed during the semesters of my Computer Science undergra
 - AVL Trees
 - Compiler
 - Hash Tables
+- Web System for Scheduling Medical Appointments
 
 ### Projects developed in [Python](https://github.com/GiovannaVictoria/AcademicProjects/blob/Python/PythonInfo.md)
 - Hangman
@@ -36,8 +37,8 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 
 ### Projetos realizados em [Java](https://github.com/GiovannaVictoria/AcademicProjects/blob/Java/JavaInfo.md)
 - Árvores AVL
-- Sistema Web para Agendamento de Consultas Médicas
 - Compilador
+- Sistema Web para Agendamento de Consultas Médicas
 - Tabelas Hash
 
 ### Projetos realizados em [Python](https://github.com/GiovannaVictoria/AcademicProjects/blob/Python/PythonInfo.md)
