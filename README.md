@@ -29,7 +29,7 @@ Academic projects developed during the semesters of my Computer Science undergra
 
 ###### Author: Giovanna Victória Rossetto
 ###### Creation date: 05/12/2024 - May 12th, 2024
-###### Last modified: 05/13/2024 - May 13th, 2024
+###### Last modified: 25/07/2024 - July 25th, 2024
 
 # ProjetosAcademicos
 
@@ -55,10 +55,10 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 - Criptografia de Arquivos Texto
 - Manipulação de Elementos Químicos
 
-
+### Projetos desenvolvidos em [C](https://github.com/GiovannaVictoria/AcademicProjects/blob/C/CInfo.md)
 - Árvores B
 - TAD de Conjuntos
 
 ###### Autor: Giovanna Victória Rossetto
 ###### Data de criação: 12/05/2024 - 12 de maio de 2024
-###### Last modified: 13/05/2024 - 13 de maio 2024
+###### Última modificação: 25/07/2024 - 25 de julho de 2024
