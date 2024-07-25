@@ -36,6 +36,7 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 
 ### Projetos realizados em [Java](https://github.com/GiovannaVictoria/AcademicProjects/blob/Java/JavaInfo.md)
 - Árvores AVL
+- Sistema Web para Agendamento de Consultas Médicas
 - Compilador
 - Tabelas Hash
 
