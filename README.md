@@ -3,19 +3,19 @@
 
 Academic projects developed during the semesters of my Computer Science undergraduate studies at UFSCar.
 
-### Projects developed in [Java](https://github.com/GiovannaVictoria/AcademicProjects/blob/Java/JavaInfo.md)
+### Projects developed in Java
 - AVL Trees
 - Compiler
 - Hash Tables
 - Web System for Scheduling Medical Appointments
 
-### Projects developed in [Python](https://github.com/GiovannaVictoria/AcademicProjects/blob/Python/PythonInfo.md)
+### Projects developed in Python
 - Hangman
 - On Sleighs
 - Selection Process
 - Supervised Learning
 
-### Projects developed in [C++](https://github.com/GiovannaVictoria/AcademicProjects/blob/C%2B%2B/C%2B%2BInfo.md)
+### Projects developed in C++
 - Chemical Element Manipulation
 - Flight Management
 - Inventory Control using BST
@@ -23,7 +23,7 @@ Academic projects developed during the semesters of my Computer Science undergra
 - Media Catalog
 - Text File Encryption
 
-### Projects developed in [C](https://github.com/GiovannaVictoria/AcademicProjects/blob/C/CInfo.md)
+### Projects developed in C
 - B-trees
 - Set ADT
 
@@ -35,19 +35,19 @@ Academic projects developed during the semesters of my Computer Science undergra
 
 Projetos acadêmicos realizados durante os semestres de minha graduação em Ciência da Computação na UFSCar.
 
-### Projetos realizados em [Java](https://github.com/GiovannaVictoria/AcademicProjects/blob/Java/JavaInfo.md)
+### Projetos realizados em Java
 - Árvores AVL
 - Compilador
 - Sistema Web para Agendamento de Consultas Médicas
 - Tabelas Hash
 
-### Projetos realizados em [Python](https://github.com/GiovannaVictoria/AcademicProjects/blob/Python/PythonInfo.md)
+### Projetos realizados em Python
 - Aprendizado Supervisionado
 - Em Trenós
 - Jogo da Forca
 - Processo Seletivo
 
-### Projetos realizados em [C++](https://github.com/GiovannaVictoria/AcademicProjects/blob/C%2B%2B/C%2B%2BInfo.md)
+### Projetos realizados em C++
 - Administração de Voos
 - Catalogo de Mídias
 - Controle de Estoque com ABB
@@ -55,7 +55,7 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 - Criptografia de Arquivos Texto
 - Manipulação de Elementos Químicos
 
-### Projetos desenvolvidos em [C](https://github.com/GiovannaVictoria/AcademicProjects/blob/C/CInfo.md)
+### Projetos desenvolvidos em C
 - Árvores B
 - TAD de Conjuntos
 
