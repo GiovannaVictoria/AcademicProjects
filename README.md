@@ -7,6 +7,7 @@ Academic projects developed during the semesters of my Computer Science undergra
 - AVL Trees
 - Compiler
 - Hash Tables
+- Job Portal
 - Web System for Scheduling Medical Appointments
 
 ### Projects developed in Python
@@ -38,6 +39,7 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 ### Projetos realizados em Java
 - Árvores AVL
 - Compilador
+- Portal de Empregos
 - Sistema Web para Agendamento de Consultas Médicas
 - Tabelas Hash
 
