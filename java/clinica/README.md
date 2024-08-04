@@ -19,9 +19,9 @@ O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as s
 
 ### Informações para execução local:
   - É necessário ter instalados: Apache Tomcat - versão 9.0.88, e Apache Maven - versão 3.6.3 ou superior;
-  - Primeiro, é necessário subir o servidor do Tomcat através do comando: "<caminho-para-o-local-de-instalacao-do-Tomcat>/apache-tomcat-9.0.88/bin/catalina.sh run";
-  - Depois, é necessário dar o deploy da aplicação, a partir da sua pasta raiz, através do comando: "mvn tomcat7:redeploy";
+  - Primeiro, é necessário subir o servidor do Tomcat através do comando: "<<caminho-para-o-local-de-instalacao-do-Tomcat>>/apache-tomcat-9.0.88/bin/catalina.sh run";
+  - Depois, é necessário dar o deploy da aplicação, a partir da sua pasta raiz, através do comando: "mvn tomcat7:redeploy".
 
 ###### Autor: Giovanna Victória Rossetto
 ###### Data de criação: 25/07/2024 - 25 de julho de 2024
-###### Última modificação: 25/07/2024 - 25 de julho de 2024
+###### Última modificação: 04/08/2024 - 04 de agosto de 2024
