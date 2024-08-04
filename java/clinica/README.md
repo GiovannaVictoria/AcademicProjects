@@ -1,26 +1,3 @@
-# Web System for Scheduling Medical Appointments
-
-The system was built using the MVC (Model-View-Controller) architecture and utilized the following technologies: Servlet, JSP, JSTL, and JDBC on the server side, and CSS on the client side.
-
-### The system offers three types of registration:
-  - Patients, with the following data: email, password, CPF, name, phone, gender, and date of birth;
-  - Doctors, with the following data: email, password, CRM, name, and specialty;
-  - Appointments, with the following data: patient's CPF, doctor's CRM, and appointment date/time. The appointment duration is 30 minutes and always starts on the hour or half-hour.
-
-### The system has the following functionalities:
-  - CRUD for doctors via administrator login;
-  - CRUD for patients via administrator login;
-  - Listing of all doctors on a single page;
-  - Listing of all doctors by specialty;
-  - Scheduling an appointment with a doctor via patient login;
-  - Listing all appointments of a patient via patient login;
-  - Listing all appointments of a doctor via doctor login;
-  - Internationalization in two languages: Portuguese and English.
-
-###### Author: Giovanna Victória Rossetto
-###### Creation date: 07/25/2024 - July 25, 2024
-###### Last modification: 07/25/2024 - July 25, 2024
-
 # Sistema web para agendamento de consultas médicas
 
 O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as seguintes tecnologias: Servlet, JSP, JSTL e JDBC no lado do servidor e CSS no lado do cliente.
@@ -30,7 +7,7 @@ O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as s
   - de médicos, com os seguintes dados: e-mail, senha, CRM, nome e especialidade;
   - de consultas, com os seguintes dados: CPF do paciente, CRM do médico e data/hora da consulta. A duração da consulta é de 30 minutos e sempre inicia-se em "hora cheia" ou "hora meia".
 
-### O sistema possui as seguintes funcionalidade:
+### O sistema possui as seguintes funcionalidades:
   - CRUD de médicos mediante login de administrador;
   - CRUD de pacientes mediante login de administrador;
   - Listagem de todos os médicos em uma única página;
@@ -39,6 +16,11 @@ O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as s
   - Listagem de todas as consultas de um paciente mediante login do paciente;
   - Listagem de todas as consultas de um médico mediante login do médico;
   - Internacionalização em dois idiomas: português e inglês.
+
+### Informações para execução local:
+  - É necessário ter instalados: Apache Tomcat - versão 9.0.88, e Apache Maven - versão 3.6.3 ou superior;
+  - Primeiro, é necessário subir o servidor do Tomcat através do comando: "<caminho-para-o-local-de-instalacao-do-Tomcat>/apache-tomcat-9.0.88/bin/catalina.sh run";
+  - Depois, é necessário dar o deploy da aplicação, a partir da sua pasta raiz, através do comando: "mvn tomcat7:redeploy";
 
 ###### Autor: Giovanna Victória Rossetto
 ###### Data de criação: 25/07/2024 - 25 de julho de 2024
