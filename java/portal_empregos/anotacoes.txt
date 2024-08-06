@@ -19,7 +19,7 @@ Padrões:
 	  facade
   talvez de pra ter:
 	  memento
-    strategy
+          strategy
 	  state
   acredito que nao de:
 	  composite
