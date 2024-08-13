@@ -8,7 +8,8 @@ Academic projects developed during the semesters of my Computer Science undergra
 - Compiler
 - Hash Tables
 - Job Portal
-- Web System for Scheduling Medical Appointments
+- Web System for Scheduling Medical Appointments with Spring and Thymeleaf
+- Web System for Scheduling Medical Appointments with Servlets
 
 ### Projects developed in Python
 - Hangman
@@ -40,7 +41,8 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 - Árvores AVL
 - Compilador
 - Portal de Empregos
-- Sistema Web para Agendamento de Consultas Médicas
+- Sistema Web para Agendamento de Consultas Médicas com Spring e Thymeleaf
+- Sistema Web para Agendamento de Consultas Médicas com Servlets
 - Tabelas Hash
 
 ### Projetos realizados em Python
