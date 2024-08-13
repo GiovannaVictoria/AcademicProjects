@@ -1,6 +1,6 @@
 # Sistema web para agendamento de consultas médicas com Spring e Thymeleaf
 
-O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as seguintes tecnologias: Spring Boot no lado do servidor e Thymeleaf e CSS no lado do cliente.
+O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as seguintes tecnologias: Spring MVC, Spring Data JPA, Spring Security e Thymeleaf no lado do servidor e CSS no lado do cliente.
 
 ### O sistema oferece três tipos de cadastro:
   - de pacientes, com os seguintes dados: e-mail, senha, CPF, nome, telefone, sexo e data de nascimento;
