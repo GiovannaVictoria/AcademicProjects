@@ -1,0 +1,44 @@
+Padrões:
+  ja tem:
+	  factory
+	  singleton
+	  observer
+	  facade
+      strategy
+	  state
+	  
+  talvez de pra ter:
+
+  acredito que nao de:
+	  composite
+	  bridge
+	  memento
+
+
+------------------------
+Leandro - 06/06:
+Adicionei o padrão memento para a vaga, a fim de acompanhar os estados
+que ela já esteve
+Consequentemente, adicionei o padrão state para poder guardar os possiveis estados
+(No momento temos aberta, fechada e cancelada)
+Adicionei tambem o padrão strategy, para tratar como podemos alterar o estado dependendo do estado que ela se encontra
+
+Giovanna - 20/08:
+Removi a classe MementoVaga e todas as suas ocorrencias
+Renomeei a classe Funcionario para Candidato
+Criei as classes PoolVagas, PoolInscricao e Inscricao
+Atualizei Empresa com as dependencias para PoolVagas e PoolInscricao
+
+----------------------------
+O que falta:
+
+GERAL:
+	Atualizar o sistema seguindo o diagrama feito pelo professor (já feito parcialmente, falta mais a parte dos Observers)
+	Colocar o sistema no padrão MVC (eu acho q ja ta, eu nao sei como explicitar mais)
+
+Classes:
+	Criar Candidatura
+	Atualizar os observers
+		Para o funcionário, o subject é a empresa
+		para a empresa, o subject é a vaga
+	
