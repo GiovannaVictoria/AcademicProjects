@@ -1,0 +1,2 @@
+Linha 48: erro sintatico proximo a "14"
+Fim da compilacao

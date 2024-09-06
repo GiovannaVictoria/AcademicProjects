@@ -1,0 +1,4 @@
+Linha 3: nao pode haver duas instancias do mesmo ano (2024). Junte ambas ou separe em duas agendas.
+Linha 3: nao pode haver duas instancias do mesmo mes (outubro) dentro do mesmo ano. Junte ambas ou separe em duas agendas.
+Linha 46: nao pode haver duas instancias do mesmo dia (22) dentro do mesmo mes dentro do mesmo ano. Junte ambas ou separe em duas agendas.
+Fim da compilacao

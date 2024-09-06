@@ -1,0 +1,2 @@
+Linha 25: erro sintatico proximo a dia
+Fim da compilacao

@@ -1,0 +1,9 @@
+Linha 4: quando o ano escolhido eh o ano atual, o(s) meses(s) escolhido(s) (janeiro) nao pode(m) ser anterior(es) ao mes atual (setembro).
+Linha 24: quando o ano escolhido eh o ano atual, o(s) meses(s) escolhido(s) (fevereiro) nao pode(m) ser anterior(es) ao mes atual (setembro).
+Linha 22: dia 34 nao existe no mes de Janeiro.
+Linha 16: 90 nao eh um numero valido para minuto.
+Linha 23: 26 nao eh um numero valido para hora.
+Linha 42: dia 30 nao existe no mes de Fevereiro.
+Linha 34: 60 nao eh um numero valido para minuto.
+Linha 69: dia 29 existe no mes de fevereiro apenas em anos bissextos. 2025 nao eh ano bissexto.
+Fim da compilacao

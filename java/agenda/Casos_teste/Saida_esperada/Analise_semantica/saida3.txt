@@ -1,0 +1,5 @@
+Linha 3: o(s) ano(s) escolhido(s) (2023) nao pode(m) ser anterior(es) ao ano atual (2024).
+Linha 21: dia 31 nao existe no mes de Abril.
+Linha 37: 25 nao eh um numero valido para hora.
+Linha 38: 99 nao eh um numero valido para minuto.
+Fim da compilacao

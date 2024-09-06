@@ -1,0 +1,70 @@
+# Erros Semanticos: linhas 4, 16, 22, 23, 24, 34, 42 e 69
+
+ano 2024
+	Janeiro
+		dia 1
+			8h00: "Apresentação 1 - POOA"
+			14h00: "Prova 2 - ES2"
+		dia 3
+			10h00: "Seminário - SO"
+		dia 7
+			12h00: "Reunião Monitoria"
+		dia 8
+			8h00: "Apresentação 1 - DSW1"
+			14h00: "Seminário - PIBD"
+		dia 9
+			16h90: "Prova 2 - Arq2"
+		dia 17
+			10h00: "Prova 1 - AED1"
+			14h00: "Apresentação 2 - ES2"
+		dia 21
+			8h00: "Prova 2 - AM1"
+		dia 34
+			26h00: "Apresentação 1 - MC"
+	Fevereiro
+		dia 5
+			8h00: "Apresentação 2 - MC"
+			10h00: "Prova 1 - PIBD"
+		dia 6
+			14h00: "Apresentação 3 - ES2"
+		dia 12
+			16h00: "Seminário - SO"
+		dia 15
+			10h00: "Prova 2 - SO"
+			14h60: "Prova 3 - Arq2"
+		dia 16
+			8h00: "Atividade 1 - TC"
+		dia 19
+			10h00: "Seminário - MC"
+			14h00: "Apresentação 2 - DSW1"
+		dia 22
+			12h00: "Reunião Monitoria"
+		dia 30
+			10h00: "Atividade 3 - TC"
+			16h00: "Seminário - POOA"
+ano 2025
+	Fevereiro
+		dia 1
+			8h00: "Prova 3 - POOA"
+			14h00: "Prova 3 - AM1"
+		dia 2
+			14h00: "Seminário - AM1"
+		dia 7
+			16h00: "Ativiadade 3 - DSW1"
+		dia 10
+			12h00: "Reunião Monitoria"
+		dia 13
+			8h00: "Prova 2 - POOA"
+			16h00: "Atividade 3 - MC"
+		dia 15
+			10h00: "Apresentação 3 - TC"
+		dia 16
+			14h00: "Apresentação 2 - AM1"
+		dia 21
+			10h00: "Seminário - DSW1"
+			16h00: "Prova 3 - AM1"
+		dia 22
+			8h00: "Apresentação 4 - ES2"
+			14h00: "Prova 4 - TC"
+		dia 29
+			16h00: "Atividade 3 - ES2"

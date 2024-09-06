@@ -1,0 +1,68 @@
+# Erro sintatico: linha 12
+
+ano 2025
+	Abril
+		dia 1
+			8h00: "Apresentação 1 - POOA"
+			14h00: "Prova 1 - MC"
+		dia 4
+			10h00: "Seminário - SO"
+			12h00: "Reunião Monitoria"
+		dia 5
+			8h00: ano
+			14h00: "Seminário - PIBD"
+		dia 15
+			16h00: "Prova 1 - Arq2"
+		dia 16
+			10h00: "Prova 1 - POOA"
+			14h00: "Apresentação 2 - ES2"
+		dia 23
+			8h00: "Prova 1 - AM1"
+		dia 29
+			16h00: "Apresentação 1 - MC"
+	Maio
+		dia 7
+			8h00: "Apresentação 2 - MC"
+			10h00: "Prova 1 - PIBD"
+		dia 8
+			14h00: "Apresentação 3 - ES2"
+		dia 14
+			16h00: "Seminário - SO"
+		dia 15
+			10h00: "Prova 2 - SO"
+			14h00: "Prova 3 - Arq2"
+		dia 19
+			8h00: "Atividade 1 - TC"
+		dia 23
+			10h00: "Seminário - MC"
+			14h00: "Apresentação 2 - DSW1"
+		dia 27
+			12h00: "Reunião Monitoria"
+		dia 28
+			10h00: "Atividade 3 - TC"
+			16h00: "Seminário - POOA"
+	Julho
+		dia 2
+			8h00: "Prova 3 - POOA"
+			14h00: "Prova 3 - AM1"
+		dia 5
+			14h00: "Seminário - AM1"
+		dia 9
+			16h00: "Ativiadade 3 - DSW1"
+		dia 11
+			12h00: "Reunião Monitoria"
+		dia 12
+			8h00: "Prova 2 - POOA"
+			16h00: "Atividade 3 - MC"
+		dia 18
+			10h00: "Apresentação 3 - TC"
+		dia 20
+			14h00: "Apresentação 2 - AM1"
+		dia 24
+			10h00: "Seminário - DSW1"
+			16h00: "Prova 3 - AM1"
+		dia 27
+			8h00: "Apresentação 4 - ES2"
+			14h00: "Prova 4 - TC"
+		dia 29
+			16h00: "Atividade 3 - ES2"

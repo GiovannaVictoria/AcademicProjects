@@ -1,0 +1,6 @@
+Linha 21: dia 31 nao existe no mes de Novembro.
+Linha 41: dia 32 nao existe no mes de Dezembro.
+Linha 40: 70 nao eh um numero valido para minuto.
+Linha 68: dia 29 existe no mes de fevereiro apenas em anos bissextos. 2025 nao eh ano bissexto.
+Linha 59: 30 nao eh um numero valido para hora.
+Fim da compilacao

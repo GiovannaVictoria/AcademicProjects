@@ -1,0 +1,15 @@
+T__0=1
+T__1=2
+T__2=3
+COMENTARIO=4
+ESPACO=5
+DELIM=6
+NUM_INT=7
+PALAVRA_CHAVE=8
+MES=9
+CADEIA=10
+Erro_cadeia_nao_fechada=11
+'ano'=1
+'dia'=2
+'h'=3
+':'=6

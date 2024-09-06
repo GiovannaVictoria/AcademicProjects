@@ -1,0 +1,5 @@
+Linha 3: nao pode haver duas instancias do mesmo mes (abril) dentro do mesmo ano. Junte ambas ou separe em duas agendas.
+Linha 4: nao pode haver duas instancias do mesmo dia (4) dentro do mesmo mes dentro do mesmo ano. Junte ambas ou separe em duas agendas.
+Linha 23: nao pode haver duas instancias do mesmo dia (19) dentro do mesmo mes dentro do mesmo ano. Junte ambas ou separe em duas agendas.
+Linha 44: nao pode haver duas instancias do mesmo dia (12) dentro do mesmo mes dentro do mesmo ano. Junte ambas ou separe em duas agendas.
+Fim da compilacao

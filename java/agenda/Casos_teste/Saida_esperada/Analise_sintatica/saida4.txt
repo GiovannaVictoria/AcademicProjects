@@ -1,0 +1,2 @@
+Linha 10: erro sintatico proximo a "Seminário Repetido"
+Fim da compilacao

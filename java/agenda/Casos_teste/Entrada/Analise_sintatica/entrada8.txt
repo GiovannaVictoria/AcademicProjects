@@ -1,0 +1,69 @@
+# Erro sintatico: linha 39
+
+ano 2024
+	Novembro
+		dia 2
+			8h00: "Apresentação 1 - POOA"
+			14h00: "Prova 1 - MC"
+		dia 3
+			10h00: "Seminário - SO"
+			12h00: "Reunião Monitoria"
+		dia 5
+			8h00: "Apresentação 1 - DSW1"
+			14h00: "Seminário - PIBD"
+		dia 10
+			16h00: "Prova 1 - Arq2"
+		dia 15
+			10h00: "Prova 1 - POOA"
+			14h00: "Apresentação 2 - ES2"
+		dia 20
+			8h00: "Prova 1 - AM1"
+		dia 25
+			16h00: "Apresentação 1 - MC"
+	Dezembro
+		dia 3
+			8h00: "Apresentação 2 - MC"
+			10h00: "Prova 1 - PIBD"
+		dia 7
+			14h00: "Apresentação 3 - ES2"
+		dia 11
+			16h00: "Seminário - SO"
+		dia 17
+			10h00: "Prova 2 - SO"
+			14h00: "Prova 3 - Arq2"
+		dia 19
+			8h00: "Atividade 1 - TC"
+		dia 20
+			10h00: "Seminário - MC"
+			14h00: "Apresentação 2 - DSW1"
+		ano 21
+			12h00: "Reunião Monitoria"
+		dia 24
+			10h00: "Atividade 3 - TC"
+			16h00: "Seminário - POOA"
+ano 2025
+	Fevereiro
+		dia 3
+			8h00: "Prova 3 - POOA"
+			14h00: "Prova 3 - AM1"
+		dia 5
+			14h00: "Seminário - AM1"
+		dia 6
+			16h00: "Ativiadade 3 - DSW1"
+		dia 10
+			12h00: "Reunião Monitoria"
+		dia 15
+			8h00: "Prova 2 - POOA"
+			16h00: "Atividade 3 - MC"
+		dia 17
+			10h00: "Apresentação 3 - TC"
+		dia 18
+			14h00: "Apresentação 2 - AM1"
+		dia 23
+			10h00: "Seminário - DSW1"
+			16h00: "Prova 3 - AM1"
+		dia 24
+			8h00: "Apresentação 4 - ES2"
+			14h00: "Prova 4 - TC"
+		dia 28
+			16h00: "Atividade 3 - ES2"
