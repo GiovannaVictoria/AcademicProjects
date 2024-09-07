@@ -8,6 +8,7 @@ Academic projects developed during the semesters of my Computer Science undergra
 - Compiler
 - Hash Tables
 - Job Portal
+- Web System for Scheduling Medical Appointments with Spring and Rest
 - Web System for Scheduling Medical Appointments with Spring and Thymeleaf
 - Web System for Scheduling Medical Appointments with Servlets
 
@@ -41,6 +42,7 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 - Árvores AVL
 - Compilador
 - Portal de Empregos
+- Sistema Web para Agendamento de Consultas Médicas com Spring e Rest
 - Sistema Web para Agendamento de Consultas Médicas com Spring e Thymeleaf
 - Sistema Web para Agendamento de Consultas Médicas com Servlets
 - Tabelas Hash
