@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+<link rel="icon" th:href="@{/image/consulta.png}" />
+</head>
+<body>
+	<section class="layout-content" layout:fragment="corpo">
+
+		<nav class="navbar navbar-expand-md bg-light">
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><i class="oi oi-caret-right"></i>
+						<span th:text="#{consulta.cadastrar.label}"></span></li>
+				</ul>
+				<a class="btn btn-primary btn-md" th:href="@{/consultas/listar}"
+					role="button"> <span class="oi oi-spreadsheet" title="Listar"
+					aria-hidden="true"></span> <span th:text="#{consulta.listar.label}"></span>
+				</a>
+			</div>
+		</nav>
+
+		<div class="container" id="cadastro">
+
+			<div th:replace="~{fragments/alert}"></div>
+
+			<form th:action="@{/consultas/salvar}" th:object="${consulta}"
+				method="POST">
+
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label th:text="#{medico.medico.label}" for="medico"></label> <select
+							id="medico" class="form-control" th:field="*{medico}"
+							th:classappend="${#fields.hasErrors('medico')} ? 'is-invalid'">
+							<option th:each="medico : ${medicos}" th:value="${medico.id}"
+								th:text="${medico.name} + ' - ' + #{especialidade+.+${medico.especialidade}+.+label}"></option>
+						</select>
+
+						<div class="invalid-feedback">
+							<span th:errors="*{medico}"></span>
+						</div>
+					</div>
+
+					<!-- 
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label th:text="#{consulta.data.label}" for="data"></label> <input
+								type="date" class="form-control" id="data" name="data"
+								th:value="${consulta.dataHora != null ? consulta.dataHora.toLocalDate() : ''}"
+								autofocus="autofocus"
+								th:classappend="${#fields.hasErrors('dataHora')} ? 'is-invalid'" />
+
+							<div class="invalid-feedback">
+								<span th:errors="*{dataHora}"></span>
+							</div>
+						</div>
+
+						<div class="form-group col-md-6">
+							<label th:text="#{consulta.hora.label}" for="hora"></label> <select
+								id="hora" class="form-control" name="hora"
+								th:value="${consulta.dataHora != null ? consulta.dataHora.toLocalTime() : ''}"
+								th:classappend="${#fields.hasErrors('dataHora')} ? 'is-invalid'">
+								<option th:each="hora : ${horas}" th:value="${hora.value}"
+									th:text="${hora.value}"></option>
+							</select>
+
+							<div class="invalid-feedback">
+								<span th:errors="*{dataHora}"></span>
+							</div>
+						</div>
+					</div>
+					 -->
+
+					<div class="form-group col-md-6">
+						<label th:text="#{consulta.data.label}"
+							for="data"></label> <input type="date"
+							class="form-control" id="data"
+							th:field="*{data}" autofocus="autofocus"
+							th:classappend="${#fields.hasErrors('data')} ? 'is-invalid'" />
+
+						<div class="invalid-feedback">
+							<span th:errors="*{data}"></span>
+						</div>
+					</div>
+
+					<div class="form-group col-md-6">
+						<label th:text="#{consulta.hora.label}" for="hora"></label> <select
+							id="hora" class="form-control" th:field="*{hora}"
+							th:classappend="${#fields.hasErrors('hora')} ? 'is-invalid'">
+							<option th:each="hora : ${horas}" th:value="${hora.value}"
+								th:text="${hora.value}"></option>
+						</select>
+
+						<div class="invalid-feedback">
+							<span th:errors="*{hora}"></span>
+						</div>
+					</div>
+
+				</div>
+
+				<!--<input type="hidden" th:field="*{paciente.id}"
+					th:value="${paciente.id}" /> -->
+
+				 <input type="hidden" id="paciente" th:field="*{paciente.id}" /> 
+				<button type="submit" th:text="#{button.salvar.label}"
+					class="btn btn-primary btn-sm"></button>
+			</form>
+		</div>
+
+	</section>
+</body>
+</html>
