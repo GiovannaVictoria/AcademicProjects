@@ -32,7 +32,7 @@ Academic projects developed during the semesters of my Computer Science undergra
 
 ###### Author: Giovanna Victória Rossetto
 ###### Creation date: 05/12/2024 - May 12th, 2024
-###### Last modified: 08/01/2024 - August 1st, 2024
+###### Last modified: 09/07/2024 - September 7th, 2024
 
 # ProjetosAcademicos
 
@@ -67,4 +67,4 @@ Projetos acadêmicos realizados durante os semestres de minha graduação em Ci�
 
 ###### Autor: Giovanna Victória Rossetto
 ###### Data de criação: 12/05/2024 - 12 de maio de 2024
-###### Última modificação: 01/08/2024 - 1 de agosto de 2024
+###### Última modificação: 07/09/2024 - 7 de setembro de 2024
