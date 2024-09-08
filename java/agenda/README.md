@@ -43,9 +43,10 @@ Foram fornecidos 3 itens:
 O trabalho foi todo desenvolvido no NetBeans com o Maven e o ANTLR em Java. Portanto, seguir as instruções do vídeo introdutório disponível no link https://www.youtube.com/watch?v=LDRA-VOy2Bs&list=PLaPmgS59eMSEKNRIBxuBK4mJr-8pFP3lW&index=4 ou das intruções em código disponíveis no link https://github.com/dlucredio/cursocompiladores/blob/master/exemplosCodigo/Compiladores.T%C3%B3pico06.An%C3%A1lise%20Sint%C3%A1tica%20Conclus%C3%A3o.roteiro.md, ambos do professor Daniel Lucrédio, é suficiente para compilar e executar o trabalho.
 
 Versões utilizadas:
-- Java: java version "22" 2024-03-19;
-	Java(TM) SE Runtime Environment (build 22+36-2370);
-	Java HotSpot(TM) 64-Bit Server VM (build 22+36-2370, mixed mode, sharing);
+- Java:
+	- java version "22" 2024-03-19;
+ 	- Java(TM) SE Runtime Environment (build 22+36-2370);
+  	- Java HotSpot(TM) 64-Bit Server VM (build 22+36-2370, mixed mode, sharing);
 - NetBeans: 12.2;
 - ANTLR: 4.8.
 	
