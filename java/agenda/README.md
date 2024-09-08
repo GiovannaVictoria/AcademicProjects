@@ -30,35 +30,35 @@ ano 2024
 
 ### Informações sobre o repositório:
 Foram fornecidos 3 itens:
-	- Este arquivo de ajuda com informações importantes sobre a compilação e execução do trabalho;
-	- A pasta Agenda, com o projeto completo;
-	- A pasta Casos_teste, com os casos de teste usados para testar o projeto;
-		- os testes incluem testes de erros léxico, sintático, semântico e testes sem erros;
-		- foram fornecidas tanto as entradas quanto as saidas esperadas, separadas em pastas com o nome apropriado;
-    		- com relação aos casos de testes com erros léxico, sintático e semântico, é recomendável guardar as saídas em arquivos do tipo txt, como nas saídas esperadas;
-    		- com relação aos casos de teste que não contém erros e gerarão o código HTML, é recomendável guardar as saídas em arquivos do tipo HTML, para que eles possam ser abertos em um navegador;
+- Este arquivo de ajuda com informações importantes sobre a compilação e execução do trabalho;
+- A pasta Agenda, com o projeto completo;
+- A pasta Casos_teste, com os casos de teste usados para testar o projeto;
+	- os testes incluem testes de erros léxico, sintático, semântico e testes sem erros;
+	- foram fornecidas tanto as entradas quanto as saidas esperadas, separadas em pastas com o nome apropriado;
+   	- com relação aos casos de testes com erros léxico, sintático e semântico, é recomendável guardar as saídas em arquivos do tipo txt, como nas saídas esperadas;
+  	- com relação aos casos de teste que não contém erros e gerarão o código HTML, é recomendável guardar as saídas em arquivos do tipo HTML, para que eles possam ser abertos em um navegador;
 
 
 ### Informações para compilação e execução:
 O trabalho foi todo desenvolvido no NetBeans com o Maven e o ANTLR em Java. Portanto, seguir as instruções do vídeo introdutório disponível no link https://www.youtube.com/watch?v=LDRA-VOy2Bs&list=PLaPmgS59eMSEKNRIBxuBK4mJr-8pFP3lW&index=4 ou das intruções em código disponíveis no link https://github.com/dlucredio/cursocompiladores/blob/master/exemplosCodigo/Compiladores.T%C3%B3pico06.An%C3%A1lise%20Sint%C3%A1tica%20Conclus%C3%A3o.roteiro.md, ambos do professor Daniel Lucrédio, é suficiente para compilar e executar o trabalho.
 
 Versões utilizadas:
-	- Java: java version "22" 2024-03-19;
-		Java(TM) SE Runtime Environment (build 22+36-2370);
-		Java HotSpot(TM) 64-Bit Server VM (build 22+36-2370, mixed mode, sharing);
-	- NetBeans: 12.2;
-	- ANTLR: 4.8.
+- Java: java version "22" 2024-03-19;
+	Java(TM) SE Runtime Environment (build 22+36-2370);
+	Java HotSpot(TM) 64-Bit Server VM (build 22+36-2370, mixed mode, sharing);
+- NetBeans: 12.2;
+- ANTLR: 4.8.
 	
 Para a compilação, basta abrir a pasta Agenda no NetBeans e selecionar a opção Clean and Build Project. Será gerado um executável dentro da pasta Agenda/target.
 
 A execução em linha de comando para um único caso de teste precisa de 3 argumentos:
-	- caminho completo da raiz até o diretório do executável;
-	- caminho completo da raiz até o arquivo de entrada;
-	- caminho completo da raiz até o arquivo destinada para a saída.
+- caminho completo da raiz até o diretório do executável;
+- caminho completo da raiz até o arquivo de entrada;
+- caminho completo da raiz até o arquivo destinada para a saída.
 
 O comando final é para ser assim:
-	- java -jar ARG1 ARG2 ARG3
-	- java -jar /caminho_da_pasta_Agenda/Agenda/target/Agenda-1.0-SNAPSHOT-jar-with-dependencies.jar /caminho_do_arquivo_de_entrada /caminho_do_arquivo_de_saida
+- java -jar ARG1 ARG2 ARG3
+- java -jar /caminho_da_pasta_Agenda/Agenda/target/Agenda-1.0-SNAPSHOT-jar-with-dependencies.jar /caminho_do_arquivo_de_entrada /caminho_do_arquivo_de_saida
 
 Após a execução, o executável gerará a saída no arquivo destinado contido no caminho fornecido.
 
