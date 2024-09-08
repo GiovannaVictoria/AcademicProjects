@@ -23,10 +23,10 @@ A especificação da gramática está presente no arquivo Agenda/src/main/antlr4
 	- validação da hora, em questão de formato e intervalo;
 
 ### Exemplo simples:
-ano 2024
-	mes Outubro
-		dia 30
-			14h00: "evento"
+	ano 2024
+		mes Outubro
+			dia 30
+				14h00: "evento"
 
 ### Informações sobre o repositório:
 Foram fornecidos 3 itens:
