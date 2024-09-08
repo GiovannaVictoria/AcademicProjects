@@ -30,8 +30,9 @@ A especificação da gramática está presente no arquivo Agenda/src/main/antlr4
 				14h00: "evento"
 
 ### Informações sobre o repositório:
-Foram fornecidos 3 itens:
+Foram fornecidos 4 itens:
 - Este arquivo de ajuda com informações importantes sobre a compilação e execução do trabalho;
+- Um vídeo explicativo e demonstrativo sobre a linguagem;
 - A pasta Agenda, com o projeto completo;
 - A pasta Casos_teste, com os casos de teste usados para testar o projeto;
 	- os testes incluem testes de erros léxico, sintático, semântico e testes sem erros;
