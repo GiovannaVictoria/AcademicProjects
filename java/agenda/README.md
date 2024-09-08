@@ -1,7 +1,5 @@
 # Agenda Organizadora
 
-## Documentação externa - arquivo de ajuda para compilação e execução do projeto
-
 Nome: Giovanna Victória Rossetto
 RA: 791648
 
