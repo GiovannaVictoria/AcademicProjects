@@ -9,18 +9,18 @@ A agenda organizadora permite escrever eventos dentro de um horario, um dia, um 
 
 ### Informações sobre a linguagem:
 A especificação da gramática está presente no arquivo Agenda/src/main/antlr4/ufscar/dc/compiladores/gramatica/gramaticaAgenda.g4. Sua descrição vem a seguir:
-	- podem-se definir um ou mais anos, seguindo a sintaxe 'ano' NUMERO;
-	- dentro de cada ano, podem-se definir um ou mais meses, seguindo a sintaxe NOME_DO_MES;
-	- dentro de cada mês, podem-se definir um ou mais dias, seguindo a sintaxe 'dia' NUMERO;
-	- dentro de cada dia, podem-se definir um ou mais eventos, seguindo a sintaxe HH'h'MM : "descricao do evento";
-	- comentários podem ser escritos com # e são considerados até o final da linha;
-	- não é permitido colocar dois ou mais anos/meses/dias iguais de forma separada, eles precisam estar juntos;
-	- não é permitido colocar datas anteriores à data atual, seja em relação ao ano, ao mês ou ao dia; quanto ao horário, não há esse tipo de restrição;
-	- as horas devem seguir o formato de 24h apenas (00h00 até 23h59); não é permitido 12h com AM ou PM;
-	- as verificações semânticas são:
-		- verificação se o ano/mes/dia escolhido é igual ou posterior ao atual;
-		- validação do dia dentro do mês (se ele existe dentro do mês);
-		- validação da hora, em questão de formato e intervalo;
+- podem-se definir um ou mais anos, seguindo a sintaxe 'ano' NUMERO;
+- dentro de cada ano, podem-se definir um ou mais meses, seguindo a sintaxe NOME_DO_MES;
+- dentro de cada mês, podem-se definir um ou mais dias, seguindo a sintaxe 'dia' NUMERO;
+- dentro de cada dia, podem-se definir um ou mais eventos, seguindo a sintaxe HH'h'MM : "descricao do evento";
+- comentários podem ser escritos com # e são considerados até o final da linha;
+- não é permitido colocar dois ou mais anos/meses/dias iguais de forma separada, eles precisam estar juntos;
+- não é permitido colocar datas anteriores à data atual, seja em relação ao ano, ao mês ou ao dia; quanto ao horário, não há esse tipo de restrição;
+- as horas devem seguir o formato de 24h apenas (00h00 até 23h59); não é permitido 12h com AM ou PM;
+- as verificações semânticas são:
+	- verificação se o ano/mes/dia escolhido é igual ou posterior ao atual;
+	- validação do dia dentro do mês (se ele existe dentro do mês);
+	- validação da hora, em questão de formato e intervalo;
 
 ### Exemplo simples:
 ano 2024
