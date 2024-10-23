@@ -1,5 +1,11 @@
 # Sistema web para agendamento de consultas médicas com Spring Boot e Rest API
 
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+
 O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as seguintes tecnologias: Spring MVC (Controladores Rest), Spring Data JPA, Spring Security e Thymeleaf no lado do servidor e CSS no lado do cliente.
 
 ### O sistema oferece três tipos de cadastro:
@@ -16,6 +22,21 @@ O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as s
   - Listagem de todas as consultas de um paciente mediante login do paciente;
   - Listagem de todas as consultas de um médico mediante login do médico;
   - Internacionalização em dois idiomas: português e inglês.
+
+### Principais telas:
+
+![Login](images/login.png)
+![LoginIngles](images/loginIngles.png)
+![HomeAdmin](images/homeAdmin.png)
+![HomeAdminIngles](images/homeAdminIngles.png)
+![CadastrarPaciente](images/cadastrarPaciente.png)
+![CadastrarMedico](images/cadastroMedico.png)
+![ListarPacientes](images/listaPaciente.png)
+![ListarMedicos](images/listaMedicos.png)
+![CadastrarConsulta](images/cadastrarConsulta.png)
+![ConsultasPaciente](images/consultasPaciente.png)
+![ConsultasMedico](images/consultasMedico.png)
+![ListaGeralMedicos](images/listaGeral.png)
 
 ### Informações para execução local:
   - É necessário ter instalados: Apache Tomcat - versão 9.0.88, e Apache Maven - versão 3.6.3 ou superior;
