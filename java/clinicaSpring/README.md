@@ -23,6 +23,19 @@ O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as s
   - Listagem de todas as consultas de um médico mediante login do médico;
   - Internacionalização em dois idiomas: português e inglês.
 
+### Principais telas:
+
+![Login](images/login.png)
+![HomeAdmin](images/homeAdmin.png)
+![CadastrarPaciente](images/cadastrarPaciente.png)
+![CadastrarMedico](images/cadastroMedico.png)
+![ListarPacientes](images/listaPaciente.png)
+![ListarMedicos](images/listaMedicos.png)
+![CadastrarConsulta](images/cadastrarConsulta.png)
+![ConsultasPaciente](images/consultasPaciente.png)
+![ConsultasMedico](images/consultasMedico.png)
+![ListaGeralMedicos](images/listaGeral.png)
+
 ### Informações para execução local:
   - É necessário ter instalados: Apache Tomcat - versão 9.0.88, e Apache Maven - versão 3.6.3 ou superior;
   - Primeiro, é necessário executar o comando "mvn spring-boot:run" na pasta raiz da aplicação;
