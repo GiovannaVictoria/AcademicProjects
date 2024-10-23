@@ -1,6 +1,6 @@
 # Sistema web para agendamento de consultas médicas com Spring e Thymeleaf
 
-(https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+[(https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)]
 
 O sistema foi construído na arquivetura MVC (Model-View-Controller) e usou as seguintes tecnologias: Spring MVC, Spring Data JPA, Spring Security e Thymeleaf no lado do servidor e CSS no lado do cliente.
 
