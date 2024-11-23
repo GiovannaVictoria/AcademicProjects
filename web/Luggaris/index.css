@@ -3,56 +3,57 @@
     text-align: center;
 }
 
+a {
+    background-color: #D3C1D2;
+    border: 0.3dvh solid #16001e;
+    border-radius: 2dvh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    color: #16001e;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1dvh 2dvh;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.4s, border-color 0.4s;
+    width: 20rem;
+}
+
+a:hover {
+    background-color: #16001e;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    color: #D3C1D2;
+}
+
 body {
-    height: 100dvh;
-    margin: 0;
     background: #ff006a;
     display: grid;
     grid-template-rows: 1fr auto;
-}
-
-a {
-    display: inline-block;
-    padding: 1dvh 2dvh;
-    background-color: #D3C1D2;
-    color: #16001e;
-    text-decoration: none;
-    border-radius: 2dvh;
-    border: 0.3dvh solid #16001e;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-    transition: background-color 0.4s, border-color 0.4s;
-}
+    height: 100dvh;
+    margin: 0;
+}    
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 21dvh;
-    margin: 0;
     background: #16001e;
     color: #D3C1D2;
-}
+    display: flex;
+    flex-direction: column;
+    height: 21dvh;
+    justify-content: space-between;
+    margin: 0;
+}    
 
 h1 {
     text-align: center;
 }
 
-a:hover {
-    background-color: #16001e;
-    color: #D3C1D2;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+.botao-principal {
+    justify-self: center;
+    text-align: center;
 }
 
-.copyright {
-    text-align: center;
-    padding-bottom: 2dvh;
-}
-
-.descricao {
-    text-align: center;
-    padding: 3dvh 2dvh 1dvh 2dvh;
+.botao-titulo {
+    padding-bottom: 10dvh;
+    padding-top: 15dvh;
 }
 
 .botoes-principal {
@@ -60,37 +61,41 @@ a:hover {
     padding-bottom: 15dvh;
 }
 
-.botao-titulo {
-    padding-top: 15dvh;
-    padding-bottom: 10dvh;
+.copyright {
+    padding-bottom: 2dvh;
+    text-align: center;
+}
+
+.descricao {
+    padding: 3dvh 2dvh 1dvh 2dvh;
+    text-align: center;
 }
 
 .nome {
-    margin: 0 auto;
-    width: fit-content;
-    text-align: center;
-    padding: 3dvh 6dvh;
     background-color: #D3C1D2;
-    color: #16001e;
     border: 0.3dvh solid #16001e;
+    color: #16001e;
+    font-size: 4rem;
     font-weight: bold;
+    margin: 0 auto;
+    padding: 3dvh 6dvh;
+    text-align: center;
+    width: fit-content;
 }
 
 @media (max-width: 700px) {
+    .botao-principal {
+        font-size: larger;
+        padding: 1dvh;
+    }
     .botoes-principal {
         grid-template-columns: 1fr;
     }
-    .botao-principal {
-        padding: 1dvh;
-        text-align: center;
-        justify-self: center;
-        font-size: larger;
+    .copyright, .descricao {
+        font-size: medium;
     }
     .nome {
         font-size: 2rem;
-    }
-    .descricao, .copyright {
-        font-size: medium;
     }
     a {
         width: 10rem;
@@ -98,43 +103,27 @@ a:hover {
 }    
 
 @media (min-width: 701px) and (max-width: 1000px) {
+    .botao-principal {
+        font-size: x-large;
+        padding: 2dvh;
+    }
     .botoes-principal {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
-    .botao-principal {
-        padding: 2dvh;
-        text-align: center;
-        justify-self: center;
-        font-size: x-large;
-    }
-    .nome {
-        font-size: 4rem;
-    }
-    .descricao, .copyright {
+    .copyright, .descricao {
         font-size: large;
-    }
-    a {
-        width: 20rem;
     }
 }    
 
 @media (min-width: 1001px) {
+    .botao-principal {
+        font-size: xx-large;
+        padding: 3dvh;
+    }
     .botoes-principal {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
-    .botao-principal {
-        padding: 3dvh;
-        text-align: center;
-        justify-self: center;
-        font-size: xx-large;
-    }
-    .nome {
-        font-size: 4rem;
-    }
-    .descricao, .copyright {
+    .copyright, .descricao {
         font-size: x-large;
-    }
-    a {
-        width: 20rem;
     }
 }
