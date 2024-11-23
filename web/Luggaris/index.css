@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    height: 100dvh;
+    margin: 0;
+    background: #ff006a;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+a {
+    display: inline-block;
+    padding: 1dvh 2dvh;
+    background-color: #D3C1D2;
+    color: #16001e;
+    text-decoration: none;
+    border-radius: 2dvh;
+    border: 0.3dvh solid #16001e;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21dvh;
+    margin: 0;
+    background: #16001e;
+    color: #D3C1D2;
+}
+
+h1 {
+    text-align: center;
+}
+
+a:hover {
+    background-color: #16001e;
+    color: #D3C1D2;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 2dvh;
+}
+
+.descricao {
+    text-align: center;
+    padding: 3dvh 2dvh 1dvh 2dvh;
+}
+
+.botoes-principal {
+    display: grid;
+    padding-bottom: 15dvh;
+}
+
+.botao-titulo {
+    padding-top: 15dvh;
+    padding-bottom: 10dvh;
+}
+
+.nome {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    padding: 3dvh 6dvh;
+    background-color: #D3C1D2;
+    color: #16001e;
+    border: 0.3dvh solid #16001e;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .botoes-principal {
+        grid-template-columns: 1fr;
+    }
+    .botao-principal {
+        padding: 1dvh;
+        text-align: center;
+        justify-self: center;
+        font-size: larger;
+    }
+    .nome {
+        font-size: 2rem;
+    }
+    .descricao, .copyright {
+        font-size: medium;
+    }
+    a {
+        width: 10rem;
+    }
+}    
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .botoes-principal {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .botao-principal {
+        padding: 2dvh;
+        text-align: center;
+        justify-self: center;
+        font-size: x-large;
+    }
+    .nome {
+        font-size: 4rem;
+    }
+    .descricao, .copyright {
+        font-size: large;
+    }
+    a {
+        width: 20rem;
+    }
+}    
+
+@media (min-width: 1001px) {
+    .botoes-principal {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .botao-principal {
+        padding: 3dvh;
+        text-align: center;
+        justify-self: center;
+        font-size: xx-large;
+    }
+    .nome {
+        font-size: 4rem;
+    }
+    .descricao, .copyright {
+        font-size: x-large;
+    }
+    a {
+        width: 20rem;
+    }
+}

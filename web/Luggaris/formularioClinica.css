@@ -1,0 +1,253 @@
+* {
+    box-sizing:content-box;
+}
+
+a {
+    text-decoration: none;
+    color: #D3C1D2;
+}
+
+body {
+    min-height: 100dvh;
+    max-height: max-content;
+    margin: 0;
+    background: linear-gradient(to bottom, #ff006a, #ff76af);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    margin: 0;
+    background: #16001e;
+    color: #D3C1D2;
+}
+
+h1 {
+    text-align: center;
+    color: #16001e;
+}
+
+.botao {
+    padding: 2dvh;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 2dvh;
+}
+
+.descricao {
+    text-align: center;
+    padding: 3dvh 2dvh 2dvh 2dvh;
+}
+
+.form-externa {
+    display: grid;
+}
+
+.form-interna {
+    color: #16001e;
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .form-externa {
+        grid-template-columns: 1fr;
+    }
+    .form-interna {
+        padding: 2dvh;
+        text-align: center;
+    }
+    .descricao, .copyright {
+        font-size: small;
+    }
+    h1 {
+        font-size: large;
+    }
+    #enviar, #limpar {
+        padding: 1dvh;
+        font-size: small;
+    }
+}    
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .form-externa {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .form-interna {
+        padding: 2dvh;
+        text-align: center;
+    }
+    .descricao, .copyright {
+        font-size: small;
+    }
+    h1 {
+        font-size:larger;
+    }
+    #enviar, #limpar {
+        font-size: medium;
+    }
+}    
+
+@media (min-width: 1001px) {
+    .form-externa {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        margin-bottom: 10dvh;
+        gap: 10dvh;
+    }
+    .form-interna {
+        text-align: center;
+    }
+    .descricao, .copyright {
+        font-size: large;
+    }
+    #enviar, #limpar {
+        padding: 1dvh;
+        font-size: large;
+        margin-bottom: 5dvh;
+    }
+    h1 {
+        margin-bottom: 15dvh;
+    }
+    a {
+        font-size: larger;
+    }
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background: #16001e;
+}
+
+.responsive-navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #D3C1D2;
+    height: fit-content;
+}
+
+.responsive-navbar ul {
+    display: none;
+    flex-direction: column;
+}
+
+#label-dropdown-navbar-menu {
+    text-align: right;
+    user-select: none;
+    cursor: pointer;
+}
+
+#checkbox-dropdown-navbar-menu {
+    display: none;
+}
+
+#checkbox-dropdown-navbar-menu:checked + ul {
+    display: flex;
+}
+
+@media (min-width: 1001px) {
+    .responsive-navbar ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .responsive-navbar li {
+        flex-basis: 50%;
+    }
+    #label-dropdown-navbar-menu {
+        display: none;
+    }
+}
+
+/* @media (min-width: 1001px) {
+    .responsive-navbar {
+        height: fit-content;
+    }
+} */
+
+/* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background: #16001e;
+}
+
+.responsive-navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #D3C1D2;
+}
+
+.responsive-navbar ul {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#label-dropdown-navbar-menu {
+    text-align: right;
+    user-select: none;
+    cursor: pointer;
+}
+
+#checkbox-dropdown-navbar-menu {
+    display: none;
+}
+
+#checkbox-dropdown-navbar-menu:checked + ul {
+    display: flex;
+}
+
+@media (min-width: 25rem) {
+    .responsive-navbar ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .responsive-navbar li {
+        flex-basis: 50%;
+    }
+    #label-dropdown-navbar-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 40rem) {
+    .responsive-main-area {
+        display: flex;
+    }
+    .responsive-navbar ul {
+        display: flex;
+    }
+    .responsive-navbar li {
+        flex-basis: 0%;
+    }
+} */
