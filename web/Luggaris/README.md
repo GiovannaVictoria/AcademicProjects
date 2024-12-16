@@ -15,7 +15,7 @@ Os tipos de estabelecimentos implementados são:
   - hospitais;
   - restaurantes.
 
-# Funcionalidades oferecidas
+### Funcionalidades oferecidas
 
 Para encontrar clínicas, é possível escolher:
   - a especialidade médica desejada;
