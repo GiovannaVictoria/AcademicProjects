@@ -25,17 +25,17 @@
         <input type='checkbox' id='checkbox-dropdown-navbar-menu' />
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="formularioBanco.html">Bancos</a></li>
-            <li><a href="formularioFarmacia.html">Farmácias</a></li>
-            <li><a href="formularioHospital.html">Hospitais</a></li>
-            <li><a href="formularioHotel.html">Hotéis</a></li>
-            <li><a href="formularioRestaurante.html">Restaurantes</a></li>
+            <li><a href="formularioClinica.html">Bancos</a></li>
+            <li><a href="formularioClinica.html">Farmácias</a></li>
+            <li><a href="formularioClinica.html">Hospitais</a></li>
+            <li><a href="formularioClinica.html">Hotéis</a></li>
+            <li><a href="formularioClinica.html">Restaurantes</a></li>
         </ul>
     </nav>
 
     <h1>Digite as informações sobre o tipo de clínica que você quer encontrar:</h1>
 
-    <form action="/pagina.html" method="get">
+    <form action="clinicas.html" method="get">
         <div class="form-externa">
             <div class="form-interna">
                 <label for="especialidade" class="titulo">Especialidade:</label><br>
@@ -49,21 +49,6 @@
                 <label for="distancia" class="titulo">Distância máxima (em km):</label><br>
                 <input type="number" id="distancia" name="distancia" min="1" max="100" required>
             </div>
-            <!-- <div class="form-interna">
-                <label class="titulo">Tipo de clínica:</label><br>
-                <input type="radio" id="ambulatorio" name="tipo" value="ambulatorio">
-                <label for="ambulatorio">Ambulatório</label><br>
-                <input type="radio" id="especializada" name="tipo" value="especializada">
-                <label for="especializada">Clínica especializada</label><br>
-                <input type="radio" id="integrada" name="tipo" value="integrada">
-                <label for="integrada">Clínica integrada</label><br>
-                <input type="radio" id="pediatrica" name="tipo" value="pediatrica">
-                <label for="pediatrica">Clínica pediátrica</label><br>
-                <input type="radio" id="popular" name="tipo" value="popular">
-                <label for="popular">Clínica popular</label><br>
-                <input type="radio" id="qualquerClinica" name="tipo" value="qualquerClinica" checked>
-                <label for="qualquerClinica">Qualquer tipo</label>
-            </div> -->
             <div class="form-interna">
                 <label class="titulo">Horário de funcionamento:</label><br>
                 <input type="radio" id="24h" name="horario" value="24h">
@@ -109,36 +94,6 @@
                 <input type="checkbox" id="unimed" name="unimed" value="unimed">
                 <label for="unimed">Unimed</label>
             </div>
-            <!-- <div class="form-interna">
-                <label class="titulo">Opções de acessibilidade:</label><br>
-                <input type="checkbox" id="sonoro" name="sonoro" value="sonoro">
-                <label for="sonoro">Avisos sonoros</label><br>
-                <input type="checkbox" id="banheiro" name="banheiro" value="banheiro">
-                <label for="banheiro">Banheiros adaptados</label><br>
-                <input type="checkbox" id="elevador" name="elevador" value="elevador">
-                <label for="elevador">Elevadores</label><br>
-                <input type="checkbox" id="piso" name="piso" value="piso">
-                <label for="piso">Pisos táteis</label><br>
-                <input type="checkbox" id="rampa" name="rampa" value="rampa">
-                <label for="rampa">Rampas de acesso</label><br>
-                <input type="checkbox" id="vaga" name="vaga" value="vaga">
-                <label for="vaga">Vagas reservadas</label>
-            </div>
-            <div class="form-interna">
-                <label class="titulo">Serviços extras:</label><br>
-                <input type="checkbox" id="estacionamento" name="estacionamento" value="estacionamento">
-                <label for="estacionamento">Estacionamento</label><br>
-                <input type="checkbox" id="kids" name="kids" value="kids">
-                <label for="kids">Espaço kids</label><br>
-                <input type="checkbox" id="cafeteria" name="cafeteria" value="cafeteria">
-                <label for="cafeteria">Cafeteria</label><br>
-                <input type="checkbox" id="manobrista" name="manobrista" value="manobrista">
-                <label for="manobrista">Manobrista</label><br>
-                <input type="checkbox" id="seguranca" name="seguranca" value="seguranca">
-                <label for="seguranca">Segurança</label><br>
-                <input type="checkbox" id="wifi" name="wifi" value="wifi">
-                <label for="wifi">Wi-fi</label>
-            </div> -->
         </div>
         <div class="botao">
             <input type="submit" value="Enviar" id="enviar">
