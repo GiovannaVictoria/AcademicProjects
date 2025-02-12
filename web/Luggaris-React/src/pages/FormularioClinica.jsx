@@ -1,5 +1,6 @@
 import React from 'react';
-import './FormularioClinica.css';
+import './Home.css';
+import './FormularioClinica.css'
 
 const FormularioClinica = () => {
   return (
@@ -30,7 +31,7 @@ const FormularioClinica = () => {
             <input type="text" id="especialidade" name="especialidade" required />
           </div>
           <div className="form-interna">
-            <label htmlFor="enderecoProximo" className="titulo">Próximo ao endereço:</label><br />
+            <label htmlFor="enderecoProximo" className="titulo">Próximo à localização:</label><br />
             <input type="tel" id="enderecoProximo" name="enderecoProximo" required />
           </div>
           <div className="form-interna">

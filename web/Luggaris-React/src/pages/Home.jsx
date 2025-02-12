@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './Home.css';
+import './FormularioClinica.css'
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
           <Link to="/formulario-clinica">Hotéis</Link>
         </div>
         <div className="botao-principal">
-          <Link to="/formulario-clinica">Restaurantes</Link>
+          <Link to="/localizacao">Localizacao</Link>
         </div>
       </section>
 
