@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   text-align: center;
 }
@@ -126,9 +126,9 @@ h1 {
   .copyright, .descricao {
       font-size: x-large;
   }
-}
+} */
 
-/* #root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -169,4 +169,4 @@ h1 {
 
 .read-the-docs {
   color: #888;
-} */
+}
