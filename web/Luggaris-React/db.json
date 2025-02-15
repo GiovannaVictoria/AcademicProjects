@@ -1,0 +1,22 @@
+{
+    "clinicas": [
+        {
+            "id": 1,
+            "nome": "Clínica Saúde Total",
+            "latitude": 23,
+            "longitude": 46
+        },
+        {
+            "id": 2,
+            "nome": "Clínica Bem-Estar",
+            "latitude": -23.5510,
+            "longitude": -46.6320
+        },
+        {
+            "id": 3,
+            "nome": "Clínica Vida Leve",
+            "latitude": -23.5495,
+            "longitude": -46.6340
+        }
+    ]
+}
