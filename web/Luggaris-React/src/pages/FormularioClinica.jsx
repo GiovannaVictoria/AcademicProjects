@@ -12,7 +12,7 @@ const FormularioClinica = () => {
   const [clinicas, setClinicas] = useState([]);
   const [horario, setHorario] = useState([]);
   const [aberto24h, setAberto24h] = useState(false);
-  const [avaliacao, setAvaliacao] = useState("umaEstrela");
+  const [avaliacao, setAvaliacao] = useState(1);
 
   const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
 
@@ -20,7 +20,7 @@ const FormularioClinica = () => {
   const handleLongitudeChange = (event) => setLongitude(event.target.value);
   const handleDistanciaChange = (event) => setDistancia(event.target.value);
   const handleEspecialidadeChange = (event) => setEspecialidade(event.target.value);
-  const handleAvaliacaoChange = (event) => setAvaliacao(event.target.value);
+  const handleAvaliacaoChange = (event) => setAvaliacao(Number(event.target.value));
   // const handleHorarioChange = (event) => setHorario(event.target.value);
 
   const handleHorarioChange = (e) => {
@@ -230,8 +230,8 @@ const FormularioClinica = () => {
               type="radio"
               id="umaEstrela"
               name="avaliacao"
-              value="umaEstrela"
-              checked={avaliacao === "umaEstrela"}
+              value={1}
+              checked={avaliacao === 1}
               onChange={handleAvaliacaoChange} />
             <label htmlFor="umaEstrela">Uma estrela</label><br />
 
@@ -239,8 +239,8 @@ const FormularioClinica = () => {
               type="radio"
               id="duasEstrelas"
               name="avaliacao"
-              value="duasEstrelas"
-              checked={avaliacao === "duasEstrelas"}
+              value={2}
+              checked={avaliacao === 2}
               onChange={handleAvaliacaoChange} />
             <label htmlFor="duasEstrelas">Duas estrelas</label><br />
 
@@ -248,8 +248,8 @@ const FormularioClinica = () => {
               type="radio"
               id="tresEstrelas"
               name="avaliacao"
-              value="tresEstrelas"
-              checked={avaliacao === "tresEstrelas"}
+              value={3}
+              checked={avaliacao === 3}
               onChange={handleAvaliacaoChange} />
             <label htmlFor="tresEstrelas">Três estrelas</label><br />
 
@@ -257,8 +257,8 @@ const FormularioClinica = () => {
               type="radio"
               id="quatroEstrelas"
               name="avaliacao"
-              value="quatroEstrelas"
-              checked={avaliacao === "quatroEstrelas"}
+              value={4}
+              checked={avaliacao === 4}
               onChange={handleAvaliacaoChange} />
             <label htmlFor="quatroEstrelas">Quatro estrelas</label><br />
 
@@ -266,8 +266,8 @@ const FormularioClinica = () => {
               type="radio"
               id="cincoEstrelas"
               name="avaliacao"
-              value="cincoEstrelas"
-              checked={avaliacao === "cincoEstrelas"}
+              value={5}
+              checked={avaliacao === 5}
               onChange={handleAvaliacaoChange} />
             <label htmlFor="cincoEstrelas">Cinco estrelas</label><br />
 

@@ -42,6 +42,7 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario,
             haversine(latitude, longitude, clinica.latitude, clinica.longitude) <= distancia
             && clinica.especialidades.includes(especialidade.toLowerCase())
             && horario.every(item => clinica.horarios.includes(item))
+            && clinica.avaliacao >= avaliacao
           );
           setClinicas(clinicasProximas);
         })
