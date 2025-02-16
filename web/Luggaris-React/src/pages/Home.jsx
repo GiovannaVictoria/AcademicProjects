@@ -11,24 +11,12 @@ function Home() {
       </header>
 
       <section className="botoes-principal">
-        <div className="botao-principal">
-          <Link to="/formulario-clinica">Bancos</Link>
-        </div>
-        <div className="botao-principal">
-          <Link to="/formulario-clinica">Clínicas</Link>
-        </div>
-        <div className="botao-principal">
-          <Link to="/formulario-clinica">Farmácias</Link>
-        </div>
-        <div className="botao-principal">
-          <Link to="/formulario-clinica">Hospitais</Link>
-        </div>
-        <div className="botao-principal">
-          <Link to="/formulario-clinica">Hotéis</Link>
-        </div>
-        <div className="botao-principal">
-          <Link to="/formulario-clinica">Restaurantes</Link>
-        </div>
+        <Link to="/formulario-clinica" className="botao-principal">Bancos</Link>
+        <Link to="/formulario-clinica" className="botao-principal">Clínicas</Link>
+        <Link to="/formulario-clinica" className="botao-principal">Farmácias</Link>
+        <Link to="/formulario-clinica" className="botao-principal">Hospitais</Link>
+        <Link to="/formulario-clinica" className="botao-principal">Hotéis</Link>
+        <Link to="/formulario-clinica" className="botao-principal">Restaurantes</Link>
       </section>
 
       <footer>
