@@ -15,19 +15,20 @@ function haversine(lat1, lon1, lat2, lon2) {
   return R * c; // Distância em km
 }
 
-const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario }) => {
+const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario, avaliacao}) => {
   const [clinicas, setClinicas] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  alert("d");
+  // alert("d");
   useEffect(() => {
-    alert("e");
+    // alert("e");
     // alert(latitude && longitude);
     alert(latitude);
     alert(longitude);
     alert(distancia);
     alert(especialidade);
     alert(horario);
+    alert(avaliacao);
     // if (latitude && longitude) {
       // fetch("http://localhost:5000/clinicas") // Faz a requisição ao JSON Server
       if (latitude !== null && longitude !== null) {
@@ -47,7 +48,7 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario 
         .catch(error => console.error("Erro ao buscar clínicas:", error))
         .finally(() => setLoading(false));
     }
-  }, [latitude, longitude, distancia, especialidade, horario]);
+  }, [latitude, longitude, distancia, especialidade, horario, avaliacao]);
 
   return (
     <div>

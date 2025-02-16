@@ -12,6 +12,7 @@ const FormularioClinica = () => {
   const [clinicas, setClinicas] = useState([]);
   const [horario, setHorario] = useState([]);
   const [aberto24h, setAberto24h] = useState(false);
+  const [avaliacao, setAvaliacao] = useState("umaEstrela");
 
   const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
 
@@ -19,11 +20,12 @@ const FormularioClinica = () => {
   const handleLongitudeChange = (event) => setLongitude(event.target.value);
   const handleDistanciaChange = (event) => setDistancia(event.target.value);
   const handleEspecialidadeChange = (event) => setEspecialidade(event.target.value);
+  const handleAvaliacaoChange = (event) => setAvaliacao(event.target.value);
   // const handleHorarioChange = (event) => setHorario(event.target.value);
 
   const handleHorarioChange = (e) => {
     const { value, checked } = e.target;
-    
+
     // Se o usuário marcar ou desmarcar um horário
     setHorario((prevHorario) => {
       let newHorario;
@@ -32,7 +34,7 @@ const FormularioClinica = () => {
       } else {
         newHorario = prevHorario.filter((item) => item !== value);
       }
-      
+
       // Verifica se todas as opções de horário estão selecionadas para marcar o "Aberto 24h"
       if (newHorario.length === horariosOpcoes.length) {
         setAberto24h(true);
@@ -81,7 +83,7 @@ const FormularioClinica = () => {
   };
 
   const buscarClinicas = async (event) => {
-    alert("b");
+    // alert("b");
     event.preventDefault();
 
     // Captura os valores do formulário
@@ -92,7 +94,7 @@ const FormularioClinica = () => {
     const url = `http://localhost:5000/clinicas`;
 
     try {
-      alert("c");
+      // alert("c");
       const resposta = await fetch(url);
       if (!resposta.ok) throw new Error('Erro ao buscar clínicas');
 
@@ -169,7 +171,7 @@ const FormularioClinica = () => {
           </div>
 
           <div className="form-interna">
-          <label className="titulo">Horário de funcionamento:</label><br />
+            <label className="titulo">Horário de funcionamento:</label><br />
 
             <input
               type="checkbox"
@@ -221,17 +223,67 @@ const FormularioClinica = () => {
             <label htmlFor="madrugada">De madrugada</label><br />
           </div>
 
+          <div className="form-interna">
+            <label className="titulo">Avaliação mínima:</label><br />
+
+            <input
+              type="radio"
+              id="umaEstrela"
+              name="avaliacao"
+              value="umaEstrela"
+              checked={avaliacao === "umaEstrela"}
+              onChange={handleAvaliacaoChange} />
+            <label htmlFor="umaEstrela">Uma estrela</label><br />
+
+            <input
+              type="radio"
+              id="duasEstrelas"
+              name="avaliacao"
+              value="duasEstrelas"
+              checked={avaliacao === "duasEstrelas"}
+              onChange={handleAvaliacaoChange} />
+            <label htmlFor="duasEstrelas">Duas estrelas</label><br />
+
+            <input
+              type="radio"
+              id="tresEstrelas"
+              name="avaliacao"
+              value="tresEstrelas"
+              checked={avaliacao === "tresEstrelas"}
+              onChange={handleAvaliacaoChange} />
+            <label htmlFor="tresEstrelas">Três estrelas</label><br />
+
+            <input
+              type="radio"
+              id="quatroEstrelas"
+              name="avaliacao"
+              value="quatroEstrelas"
+              checked={avaliacao === "quatroEstrelas"}
+              onChange={handleAvaliacaoChange} />
+            <label htmlFor="quatroEstrelas">Quatro estrelas</label><br />
+
+            <input
+              type="radio"
+              id="cincoEstrelas"
+              name="avaliacao"
+              value="cincoEstrelas"
+              checked={avaliacao === "cincoEstrelas"}
+              onChange={handleAvaliacaoChange} />
+            <label htmlFor="cincoEstrelas">Cinco estrelas</label><br />
+
+          </div>
+
         </div>
 
         <div className="botao">
           <input type="submit" value="Buscar Clínicas" />
         </div>
-        
+
       </form>
 
       {/* Exibe os resultados após a busca */}
       {/* {clinicas.length > 0 && <ListaClinicas clinicas={clinicas} />} */}
-      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} horario={horario} />}
+      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} horario={horario} avaliacao={avaliacao} />}
 
     </div>
   );
