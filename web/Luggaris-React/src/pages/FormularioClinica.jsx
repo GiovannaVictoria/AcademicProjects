@@ -41,7 +41,7 @@ const FormularioClinica = () => {
     const distancia = event.target.distancia.value;
 
     // Monta a URL para buscar as clínicas no json-server
-    const url = `http://localhost:5000/clinicas?latitude=23&longitude=46`;
+    const url = `http://localhost:5000/clinicas`;
 
     try {
       alert("c");
