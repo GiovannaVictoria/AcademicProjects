@@ -10,11 +10,52 @@ const FormularioClinica = () => {
   const [distancia, setDistancia] = useState(null);
   const [especialidade, setEspecialidade] = useState(null);
   const [clinicas, setClinicas] = useState([]);
+  const [horario, setHorario] = useState([]);
+  const [aberto24h, setAberto24h] = useState(false);
+
+  const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
 
   const handleLatitudeChange = (event) => setLatitude(event.target.value);
   const handleLongitudeChange = (event) => setLongitude(event.target.value);
   const handleDistanciaChange = (event) => setDistancia(event.target.value);
   const handleEspecialidadeChange = (event) => setEspecialidade(event.target.value);
+  // const handleHorarioChange = (event) => setHorario(event.target.value);
+
+  const handleHorarioChange = (e) => {
+    const { value, checked } = e.target;
+    
+    // Se o usuário marcar ou desmarcar um horário
+    setHorario((prevHorario) => {
+      let newHorario;
+      if (checked) {
+        newHorario = [...prevHorario, value];
+      } else {
+        newHorario = prevHorario.filter((item) => item !== value);
+      }
+      
+      // Verifica se todas as opções de horário estão selecionadas para marcar o "Aberto 24h"
+      if (newHorario.length === horariosOpcoes.length) {
+        setAberto24h(true);
+      } else {
+        setAberto24h(false);
+      }
+
+      return newHorario;
+    });
+  };
+
+  const handleAberto24hChange = (e) => {
+    const { checked } = e.target;
+    setAberto24h(checked);
+
+    if (checked) {
+      // Marca todas as opções de horário
+      setHorario(['manha', 'tarde', 'noite', 'madrugada']);
+    } else {
+      // Desmarca todas as opções
+      setHorario([]);
+    }
+  };
 
   // alert("a");
 
@@ -69,38 +110,128 @@ const FormularioClinica = () => {
       <h1>Digite as informações sobre o tipo de clínica que você quer encontrar:</h1>
 
       <form onSubmit={buscarClinicas}>
+
         <div className="form-externa">
+
           <div className="form-interna">
             <label htmlFor="especialidade" className="titulo">Especialidade:</label><br />
-            <input type="text" id="especialidade" name="especialidade" onChange={handleEspecialidadeChange} required />
+            <input
+              type="text"
+              id="especialidade"
+              name="especialidade"
+              onChange={handleEspecialidadeChange}
+              required />
           </div>
+
           {/* <div className="form-interna">
             <label htmlFor="enderecoProximo" className="titulo">Próximo à localização:</label><br />
             <input type="text" id="enderecoProximo" name="enderecoProximo" value={localizacao} readOnly />
             <button onClick={obterLocalizacao}>Obter Localização</button>
           </div> */}
+
           <div className="form-interna">
+
             <label htmlFor="latitude" className="titulo">Latitude:</label><br />
-            <input type="number" id="latitude" name="latitude" step="any" value={latitude} onChange={handleLatitudeChange} required />
+            <input
+              type="number"
+              id="latitude"
+              name="latitude"
+              step="any"
+              value={latitude}
+              onChange={handleLatitudeChange}
+              required />
             <br></br>
+
             <label htmlFor="longitude" className="titulo">Longitude:</label><br />
-            <input type="number" id="longitude" name="longitude" step="any" value={longitude} onChange={handleLongitudeChange} required />
+            <input
+              type="number"
+              id="longitude"
+              name="longitude"
+              step="any"
+              value={longitude}
+              onChange={handleLongitudeChange}
+              required />
             <br></br>
+
             <button onClick={obterLocalizacao}>Obter Localização</button>
           </div>
+
           <div className="form-interna">
             <label htmlFor="distancia" className="titulo">Distância máxima (em km):</label><br />
-            <input type="number" id="distancia" name="distancia" min="1" max="100" onChange={handleDistanciaChange} required />
+            <input
+              type="number"
+              id="distancia"
+              name="distancia"
+              min="1"
+              max="100"
+              onChange={handleDistanciaChange}
+              required />
           </div>
+
+          <div className="form-interna">
+          <label className="titulo">Horário de funcionamento:</label><br />
+
+            <input
+              type="checkbox"
+              id="aberto24h"
+              name="horario"
+              checked={aberto24h}
+              onChange={handleAberto24hChange}
+            />
+            <label htmlFor="aberto24h">Aberto 24h</label><br />
+
+            <input
+              type="checkbox"
+              id="manha"
+              name="horario"
+              value="manha"
+              checked={horario.includes('manha')}
+              onChange={handleHorarioChange}
+            />
+            <label htmlFor="manha">De manhã</label><br />
+
+            <input
+              type="checkbox"
+              id="tarde"
+              name="horario"
+              value="tarde"
+              checked={horario.includes('tarde')}
+              onChange={handleHorarioChange}
+            />
+            <label htmlFor="tarde">De tarde</label><br />
+
+            <input
+              type="checkbox"
+              id="noite"
+              name="horario"
+              value="noite"
+              checked={horario.includes('noite')}
+              onChange={handleHorarioChange}
+            />
+            <label htmlFor="noite">De noite</label><br />
+
+            <input
+              type="checkbox"
+              id="madrugada"
+              name="horario"
+              value="madrugada"
+              checked={horario.includes('madrugada')}
+              onChange={handleHorarioChange}
+            />
+            <label htmlFor="madrugada">De madrugada</label><br />
+          </div>
+
         </div>
+
         <div className="botao">
           <input type="submit" value="Buscar Clínicas" />
         </div>
+        
       </form>
 
       {/* Exibe os resultados após a busca */}
       {/* {clinicas.length > 0 && <ListaClinicas clinicas={clinicas} />} */}
-      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} />}
+      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} horario={horario} />}
 
     </div>
   );

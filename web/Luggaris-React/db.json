@@ -4,6 +4,7 @@
             "id": 1,
             "nome": "Clínica Saúde Total",
             "especialidades": ["cardiologia", "dermatologia"],
+            "horarios": ["manha", "tarde", "noite", "madrugada"],
             "latitude": -23.5505,
             "longitude": -46.6333
         },
@@ -11,6 +12,7 @@
             "id": 2,
             "nome": "Clínica Bem-Estar",
             "especialidades": ["dermatologia", "pediatria"],
+            "horarios": ["manha", "tarde"],
             "latitude": -23.5510,
             "longitude": -46.6320
         },
@@ -18,6 +20,7 @@
             "id": 3,
             "nome": "Clínica Vida Leve",
             "especialidades": ["cardiologia", "pediatria"],
+            "horarios": ["noite", "madrugada"],
             "latitude": -23.5495,
             "longitude": -46.6340
         }

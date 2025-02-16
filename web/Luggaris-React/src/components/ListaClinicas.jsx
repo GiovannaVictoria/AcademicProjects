@@ -15,7 +15,7 @@ function haversine(lat1, lon1, lat2, lon2) {
   return R * c; // Distância em km
 }
 
-const ListaClinicas = ({ latitude, longitude, distancia, especialidade }) => {
+const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario }) => {
   const [clinicas, setClinicas] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -27,6 +27,7 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade }) => {
     alert(longitude);
     alert(distancia);
     alert(especialidade);
+    alert(horario);
     // if (latitude && longitude) {
       // fetch("http://localhost:5000/clinicas") // Faz a requisição ao JSON Server
       if (latitude !== null && longitude !== null) {
@@ -39,13 +40,14 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade }) => {
           const clinicasProximas = data.filter(clinica =>
             haversine(latitude, longitude, clinica.latitude, clinica.longitude) <= distancia
             && clinica.especialidades.includes(especialidade.toLowerCase())
+            && horario.every(item => clinica.horarios.includes(item))
           );
           setClinicas(clinicasProximas);
         })
         .catch(error => console.error("Erro ao buscar clínicas:", error))
         .finally(() => setLoading(false));
     }
-  }, [latitude, longitude, distancia, especialidade]);
+  }, [latitude, longitude, distancia, especialidade, horario]);
 
   return (
     <div>
