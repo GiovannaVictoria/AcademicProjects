@@ -13,6 +13,7 @@ const FormularioClinica = () => {
   const [horario, setHorario] = useState([]);
   const [aberto24h, setAberto24h] = useState(false);
   const [avaliacao, setAvaliacao] = useState(1);
+  const [convenio, setConvenio] = useState([]);
 
   const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
 
@@ -22,6 +23,17 @@ const FormularioClinica = () => {
   const handleEspecialidadeChange = (event) => setEspecialidade(event.target.value);
   const handleAvaliacaoChange = (event) => setAvaliacao(Number(event.target.value));
   // const handleHorarioChange = (event) => setHorario(event.target.value);
+
+  const handleConvenioChange = (e) => {
+    const { value, checked } = e.target;
+    setConvenio(prevConvenio => {
+      if (checked) {
+        return [...prevConvenio, value]; // Adiciona o valor se o checkbox for marcado
+      } else {
+        return prevConvenio.filter(item => item !== value); // Remove o valor se o checkbox for desmarcado
+      }
+    });
+  };
 
   const handleHorarioChange = (e) => {
     const { value, checked } = e.target;
@@ -273,6 +285,61 @@ const FormularioClinica = () => {
 
           </div>
 
+          <div className="form-interna">
+            <label className="titulo">Convênio:</label><br />
+
+            <input
+              type="checkbox"
+              id="amil"
+              name="convenio"
+              value="amil"
+              checked={convenio.includes('amil')}
+              onChange={handleConvenioChange}
+            />
+            <label htmlFor="amil">Amil</label><br />
+
+            <input
+              type="checkbox"
+              id="bradesco"
+              name="convenio"
+              value="bradesco"
+              checked={convenio.includes('bradesco')}
+              onChange={handleConvenioChange}
+            />
+            <label htmlFor="bradesco">Bradesco</label><br />
+
+            <input
+              type="checkbox"
+              id="norden"
+              name="convenio"
+              value="norden"
+              checked={convenio.includes('norden')}
+              onChange={handleConvenioChange}
+            />
+            <label htmlFor="norden">Norden</label><br />
+
+            <input
+              type="checkbox"
+              id="portoSeguro"
+              name="convenio"
+              value="portoSeguro"
+              checked={convenio.includes('portoSeguro')}
+              onChange={handleConvenioChange}
+            />
+            <label htmlFor="portoSeguro">Porto Seguro</label><br />
+
+            <input
+              type="checkbox"
+              id="unimed"
+              name="convenio"
+              value="unimed"
+              checked={convenio.includes('unimed')}
+              onChange={handleConvenioChange}
+            />
+            <label htmlFor="unimed">Unimed</label><br />
+
+          </div>
+
         </div>
 
         <div className="botao">
@@ -283,7 +350,7 @@ const FormularioClinica = () => {
 
       {/* Exibe os resultados após a busca */}
       {/* {clinicas.length > 0 && <ListaClinicas clinicas={clinicas} />} */}
-      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} horario={horario} avaliacao={avaliacao} />}
+      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} horario={horario} avaliacao={avaliacao} convenio={convenio} />}
 
     </div>
   );

@@ -5,7 +5,8 @@
             "nome": "Clínica Saúde Total",
             "especialidades": ["cardiologia", "dermatologia"],
             "horarios": ["manha", "tarde", "noite", "madrugada"],
-            "avaliacao": 4.5,
+            "avaliacao": 5,
+            "convenios": ["amil", "bradesco", "norden"],
             "latitude": -23.5505,
             "longitude": -46.6333
         },
@@ -14,7 +15,8 @@
             "nome": "Clínica Bem-Estar",
             "especialidades": ["cardiologia", "dermatologia"],
             "horarios": ["manha", "tarde", "noite", "madrugada"],
-            "avaliacao": 3.7,
+            "avaliacao": 5,
+            "convenios": ["bradesco", "norden", "portoSeguro"],
             "latitude": -23.5510,
             "longitude": -46.6320
         },
@@ -23,7 +25,8 @@
             "nome": "Clínica Vida Leve",
             "especialidades": ["cardiologia", "dermatologia"],
             "horarios": ["manha", "tarde", "noite", "madrugada"],
-            "avaliacao": 2.9,
+            "avaliacao": 5,
+            "convenios": ["norden", "portoSeguro", "unimed"],
             "latitude": -23.5495,
             "longitude": -46.6340
         }
