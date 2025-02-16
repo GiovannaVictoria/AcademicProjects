@@ -3,7 +3,7 @@ import './Home.css';
 import './FormularioClinica.css'
 
 function Localizacao() {
-  const [posicao, setPosicao] = useState(null);
+  const [posicao, setPosicao] = useState(undefined);
 
   const obterLocalizacao = () => {
     if (navigator.geolocation) {

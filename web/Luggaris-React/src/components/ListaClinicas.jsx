@@ -1,44 +1,28 @@
 import React, { useEffect, useState } from "react";
 
-function haversine(lat1, lon1, lat2, lon2) {
-  const R = 6371; // Raio da Terra em km
+function haversine(latitude1, longitude1, latitude2, longitude2) {
+  const raioTerra = 6371;
   const toRadians = (deg) => deg * (Math.PI / 180);
   
-  const dLat = toRadians(lat2 - lat1);
-  const dLon = toRadians(lon2 - lon1);
+  const dLat = toRadians(latitude2 - latitude1);
+  const dLon = toRadians(longitude2 - longitude1);
   const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
             Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) *
             Math.sin(dLon / 2) * Math.sin(dLon / 2);
   
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  alert(R * c);
-  return R * c; // Distância em km
+  return raioTerra * c; 
 }
 
 const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario, avaliacao, convenio}) => {
   const [clinicas, setClinicas] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // alert("d");
   useEffect(() => {
-    // alert("e");
-    // alert(latitude && longitude);
-    alert(latitude);
-    alert(longitude);
-    alert(distancia);
-    alert(especialidade);
-    alert(horario);
-    alert(avaliacao);
-    alert(convenio);
-    // if (latitude && longitude) {
-      // fetch("http://localhost:5000/clinicas") // Faz a requisição ao JSON Server
       if (latitude !== null && longitude !== null) {
         fetch(`http://localhost:5000/clinicas`)
-        // fetch(`http://localhost:5000/clinicas?latitude=${latitude}&longitude=${longitude}`)
-        // fetch(`http://localhost:5000/clinicas?latitude=23&longitude=46`)
         .then(response => response.json())
         .then(data => {
-          // Filtra as clínicas mais próximas (simulação)
           const clinicasProximas = data.filter(clinica =>
             haversine(latitude, longitude, clinica.latitude, clinica.longitude) <= distancia
             && clinica.especialidades.includes(especialidade.toLowerCase())
