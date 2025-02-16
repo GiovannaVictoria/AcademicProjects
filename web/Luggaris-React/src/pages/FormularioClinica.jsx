@@ -8,11 +8,13 @@ const FormularioClinica = () => {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [distancia, setDistancia] = useState(null);
+  const [especialidade, setEspecialidade] = useState(null);
   const [clinicas, setClinicas] = useState([]);
 
   const handleLatitudeChange = (event) => setLatitude(event.target.value);
   const handleLongitudeChange = (event) => setLongitude(event.target.value);
   const handleDistanciaChange = (event) => setDistancia(event.target.value);
+  const handleEspecialidadeChange = (event) => setEspecialidade(event.target.value);
 
   // alert("a");
 
@@ -70,7 +72,7 @@ const FormularioClinica = () => {
         <div className="form-externa">
           <div className="form-interna">
             <label htmlFor="especialidade" className="titulo">Especialidade:</label><br />
-            <input type="text" id="especialidade" name="especialidade" required />
+            <input type="text" id="especialidade" name="especialidade" onChange={handleEspecialidadeChange} required />
           </div>
           {/* <div className="form-interna">
             <label htmlFor="enderecoProximo" className="titulo">Próximo à localização:</label><br />
@@ -98,7 +100,7 @@ const FormularioClinica = () => {
 
       {/* Exibe os resultados após a busca */}
       {/* {clinicas.length > 0 && <ListaClinicas clinicas={clinicas} />} */}
-      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} clinicas={clinicas} />}
+      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} />}
 
     </div>
   );

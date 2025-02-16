@@ -3,18 +3,21 @@
         {
             "id": 1,
             "nome": "Clínica Saúde Total",
+            "especialidades": ["cardiologia", "dermatologia"],
             "latitude": -23.5505,
             "longitude": -46.6333
         },
         {
             "id": 2,
             "nome": "Clínica Bem-Estar",
+            "especialidades": ["dermatologia", "pediatria"],
             "latitude": -23.5510,
             "longitude": -46.6320
         },
         {
             "id": 3,
             "nome": "Clínica Vida Leve",
+            "especialidades": ["cardiologia", "pediatria"],
             "latitude": -23.5495,
             "longitude": -46.6340
         }
