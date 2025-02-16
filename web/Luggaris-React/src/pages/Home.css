@@ -1,33 +1,13 @@
 * {
     box-sizing: border-box;
     text-align: center;
-}
-
-a {
-    background-color: #D3C1D2;
-    border: 0.3dvh solid #16001e;
-    border-radius: 2dvh;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-    color: #16001e;
-    cursor: pointer;
-    display: inline-block;
-    padding: 1dvh 2dvh;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.4s, border-color 0.4s;
-    width: 20rem;
-}
-
-a:hover {
-    background-color: #16001e;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-    color: #D3C1D2;
+    width: 100%;
 }
 
 body {
     background: #ff006a;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 2fr auto;
     height: 100dvh;
     margin: 0;
 }    
@@ -46,9 +26,30 @@ h1 {
     text-align: center;
 }
 
+.botao-principal a {
+    color: #16001e;
+    text-decoration: none;
+}
+
 .botao-principal {
+    /* all: unset; */
+    background-color: #D3C1D2;
+    border: 0.3dvh solid #16001e;
+    border-radius: 2dvh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    display: inline-block;
     justify-self: center;
+    padding: 1dvh 2dvh;
     text-align: center;
+    width: 20rem;
+}
+
+.botao-principal:hover,
+.botao-principal:hover a {
+    background-color: #16001e;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    color: #D3C1D2;
 }
 
 .botao-titulo {
@@ -87,6 +88,7 @@ h1 {
     .botao-principal {
         font-size: larger;
         padding: 1dvh;
+        margin: 1dvh;
     }
     .botoes-principal {
         grid-template-columns: 1fr;
@@ -106,9 +108,10 @@ h1 {
     .botao-principal {
         font-size: x-large;
         padding: 2dvh;
+        margin: 2dvh;
     }
     .botoes-principal {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
     .copyright, .descricao {
         font-size: large;
@@ -119,9 +122,10 @@ h1 {
     .botao-principal {
         font-size: xx-large;
         padding: 3dvh;
+        margin: 2dvh;
     }
     .botoes-principal {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
     .copyright, .descricao {
         font-size: x-large;
