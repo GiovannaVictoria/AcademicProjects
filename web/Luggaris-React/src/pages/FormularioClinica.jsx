@@ -7,12 +7,14 @@ const FormularioClinica = () => {
   // const [localizacao, setLocalizacao] = useState('');
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
+  const [distancia, setDistancia] = useState(null);
   const [clinicas, setClinicas] = useState([]);
 
   const handleLatitudeChange = (event) => setLatitude(event.target.value);
   const handleLongitudeChange = (event) => setLongitude(event.target.value);
+  const handleDistanciaChange = (event) => setDistancia(event.target.value);
 
-  alert("a");
+  // alert("a");
 
   const obterLocalizacao = (event) => {
     event.preventDefault();
@@ -86,7 +88,7 @@ const FormularioClinica = () => {
           </div>
           <div className="form-interna">
             <label htmlFor="distancia" className="titulo">Distância máxima (em km):</label><br />
-            <input type="number" id="distancia" name="distancia" min="1" max="100" required />
+            <input type="number" id="distancia" name="distancia" min="1" max="100" onChange={handleDistanciaChange} required />
           </div>
         </div>
         <div className="botao">
@@ -96,7 +98,7 @@ const FormularioClinica = () => {
 
       {/* Exibe os resultados após a busca */}
       {/* {clinicas.length > 0 && <ListaClinicas clinicas={clinicas} />} */}
-      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} clinicas={clinicas} />}
+      {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} clinicas={clinicas} />}
 
     </div>
   );

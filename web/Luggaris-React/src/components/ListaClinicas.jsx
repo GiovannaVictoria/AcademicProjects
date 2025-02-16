@@ -15,16 +15,17 @@ function haversine(lat1, lon1, lat2, lon2) {
   return R * c; // Distância em km
 }
 
-const ListaClinicas = ({ latitude, longitude }) => {
+const ListaClinicas = ({ latitude, longitude, distancia }) => {
   const [clinicas, setClinicas] = useState([]);
   const [loading, setLoading] = useState(true);
 
   alert("d");
   useEffect(() => {
     alert("e");
-    alert(latitude && longitude);
+    // alert(latitude && longitude);
     alert(latitude);
     alert(longitude);
+    alert(distancia);
     // if (latitude && longitude) {
       // fetch("http://localhost:5000/clinicas") // Faz a requisição ao JSON Server
       if (latitude !== null && longitude !== null) {
@@ -37,7 +38,7 @@ const ListaClinicas = ({ latitude, longitude }) => {
           const clinicasProximas = data.filter(clinica =>
             // Math.abs(clinica.latitude) != 0 &&
             // Math.abs(clinica.longitude) != 0
-            haversine(latitude, longitude, clinica.latitude, clinica.longitude) < 1
+            haversine(latitude, longitude, clinica.latitude, clinica.longitude) <= distancia
           );
           setClinicas(clinicasProximas);
         })
