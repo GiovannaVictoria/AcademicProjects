@@ -9,6 +9,9 @@ const FormularioClinica = () => {
   const [longitude, setLongitude] = useState(null);
   const [clinicas, setClinicas] = useState([]);
 
+  const handleLatitudeChange = (event) => setLatitude(event.target.value);
+  const handleLongitudeChange = (event) => setLongitude(event.target.value);
+
   alert("a");
 
   const obterLocalizacao = (event) => {
@@ -74,11 +77,11 @@ const FormularioClinica = () => {
           </div> */}
           <div className="form-interna">
             <label htmlFor="latitude" className="titulo">Latitude:</label><br />
-            <input type="text" id="latitude" name="latitude" value={latitude || ''} readOnly />
-
+            <input type="number" id="latitude" name="latitude" step="any" value={latitude} onChange={handleLatitudeChange} required />
+            <br></br>
             <label htmlFor="longitude" className="titulo">Longitude:</label><br />
-            <input type="text" id="longitude" name="longitude" value={longitude || ''} readOnly />
-
+            <input type="number" id="longitude" name="longitude" step="any" value={longitude} onChange={handleLongitudeChange} required />
+            <br></br>
             <button onClick={obterLocalizacao}>Obter Localização</button>
           </div>
           <div className="form-interna">
