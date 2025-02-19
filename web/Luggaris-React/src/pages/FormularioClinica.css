@@ -22,7 +22,7 @@
     color: #16001e;
 }
 
-nav {
+/* nav {
     background: #16001e;
 }
 
@@ -35,11 +35,13 @@ nav ul {
 nav ul li {
     padding: 10px;
     text-align: center;
-}
+} */
 
 .botao {
     padding: 2dvh;
     text-align: center;
+    justify-content: center;
+    width: fit-content;
 }    
 
 .copyright {
@@ -57,11 +59,26 @@ nav ul li {
 }    
 
 .form-interna {
-    display: inline-block;
+    /* min-width: 100%; */
+    /* width: fit-content; */
+    justify-self: center;
+    color: #16001e;
+}
+
+.textos-inputs {
     width: fit-content;
     justify-self: center;
     color: #16001e;
-}    
+}
+
+.opcoes-inputs {
+    display: inline-flex;
+    width: 60%;
+}
+
+.opcao {
+    text-align: left;
+}
 
 .responsive-navbar {
     display: flex;

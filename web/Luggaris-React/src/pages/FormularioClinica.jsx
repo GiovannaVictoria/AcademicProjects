@@ -132,7 +132,7 @@ const FormularioClinica = () => {
 
         <div className="form-externa">
 
-          <div className="form-interna">
+          <div className="textos-inputs">
             <label htmlFor="especialidade" className="titulo">Especialidade:</label><br />
             <input
               type="text"
@@ -148,7 +148,7 @@ const FormularioClinica = () => {
             <button onClick={obterLocalizacao}>Obter Localização</button>
           </div> */}
 
-          <div className="form-interna">
+          <div className="textos-inputs">
 
             <label htmlFor="latitude" className="titulo">Latitude:</label><br />
             <input
@@ -175,7 +175,7 @@ const FormularioClinica = () => {
             <button onClick={obterLocalizacao}>Obter Localização</button>
           </div>
 
-          <div className="form-interna">
+          <div className="textos-inputs">
             <label htmlFor="distancia" className="titulo">Distância máxima (em km):</label><br />
             <input
               type="number"
@@ -190,158 +190,188 @@ const FormularioClinica = () => {
           <div className="form-interna">
             <label className="titulo">Horário de funcionamento:</label><br />
 
-            <input
-              type="checkbox"
-              id="aberto24h"
-              name="horario"
-              checked={aberto24h}
-              onChange={handleAberto24hChange}
-            />
-            <label htmlFor="aberto24h">Aberto 24h</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="aberto24h"
+                name="horario"
+                checked={aberto24h}
+                onChange={handleAberto24hChange}
+              />
+              <label className="opcao" htmlFor="aberto24h">Aberto 24h</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="manha"
-              name="horario"
-              value="manha"
-              checked={horario.includes('manha')}
-              onChange={handleHorarioChange}
-            />
-            <label htmlFor="manha">De manhã</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="manha"
+                name="horario"
+                value="manha"
+                checked={horario.includes('manha')}
+                onChange={handleHorarioChange}
+              />
+              <label className="opcao" htmlFor="manha">Manhã</label>
+            </div>
 
-            <input
-              type="checkbox"
-              id="tarde"
-              name="horario"
-              value="tarde"
-              checked={horario.includes('tarde')}
-              onChange={handleHorarioChange}
-            />
-            <label htmlFor="tarde">De tarde</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="tarde"
+                name="horario"
+                value="tarde"
+                checked={horario.includes('tarde')}
+                onChange={handleHorarioChange}
+              />
+              <label className="opcao" htmlFor="tarde">Tarde</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="noite"
-              name="horario"
-              value="noite"
-              checked={horario.includes('noite')}
-              onChange={handleHorarioChange}
-            />
-            <label htmlFor="noite">De noite</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="noite"
+                name="horario"
+                value="noite"
+                checked={horario.includes('noite')}
+                onChange={handleHorarioChange}
+              />
+              <label className="opcao" htmlFor="noite">Noite</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="madrugada"
-              name="horario"
-              value="madrugada"
-              checked={horario.includes('madrugada')}
-              onChange={handleHorarioChange}
-            />
-            <label htmlFor="madrugada">De madrugada</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="madrugada"
+                name="horario"
+                value="madrugada"
+                checked={horario.includes('madrugada')}
+                onChange={handleHorarioChange}
+              />
+              <label className="opcao" htmlFor="madrugada">Madrugada</label><br />
+            </div>
           </div>
 
           <div className="form-interna">
             <label className="titulo">Avaliação mínima:</label><br />
 
-            <input
-              type="radio"
-              id="umaEstrela"
-              name="avaliacao"
-              value={1}
-              checked={avaliacao === 1}
-              onChange={handleAvaliacaoChange} />
-            <label htmlFor="umaEstrela">Uma estrela</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="radio"
+                id="umaEstrela"
+                name="avaliacao"
+                value={1}
+                checked={avaliacao === 1}
+                onChange={handleAvaliacaoChange} />
+              <label className="opcao" htmlFor="umaEstrela">Uma estrela</label><br />
+            </div>
 
-            <input
-              type="radio"
-              id="duasEstrelas"
-              name="avaliacao"
-              value={2}
-              checked={avaliacao === 2}
-              onChange={handleAvaliacaoChange} />
-            <label htmlFor="duasEstrelas">Duas estrelas</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="radio"
+                id="duasEstrelas"
+                name="avaliacao"
+                value={2}
+                checked={avaliacao === 2}
+                onChange={handleAvaliacaoChange} />
+              <label className="opcao" htmlFor="duasEstrelas">Duas estrelas</label><br />
+            </div>
 
-            <input
-              type="radio"
-              id="tresEstrelas"
-              name="avaliacao"
-              value={3}
-              checked={avaliacao === 3}
-              onChange={handleAvaliacaoChange} />
-            <label htmlFor="tresEstrelas">Três estrelas</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="radio"
+                id="tresEstrelas"
+                name="avaliacao"
+                value={3}
+                checked={avaliacao === 3}
+                onChange={handleAvaliacaoChange} />
+              <label className="opcao" htmlFor="tresEstrelas">Três estrelas</label><br />
+            </div>
 
-            <input
-              type="radio"
-              id="quatroEstrelas"
-              name="avaliacao"
-              value={4}
-              checked={avaliacao === 4}
-              onChange={handleAvaliacaoChange} />
-            <label htmlFor="quatroEstrelas">Quatro estrelas</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="radio"
+                id="quatroEstrelas"
+                name="avaliacao"
+                value={4}
+                checked={avaliacao === 4}
+                onChange={handleAvaliacaoChange} />
+              <label className="opcao" htmlFor="quatroEstrelas">Quatro estrelas</label><br />
+            </div>
 
-            <input
-              type="radio"
-              id="cincoEstrelas"
-              name="avaliacao"
-              value={5}
-              checked={avaliacao === 5}
-              onChange={handleAvaliacaoChange} />
-            <label htmlFor="cincoEstrelas">Cinco estrelas</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="radio"
+                id="cincoEstrelas"
+                name="avaliacao"
+                value={5}
+                checked={avaliacao === 5}
+                onChange={handleAvaliacaoChange} />
+              <label className="opcao" htmlFor="cincoEstrelas">Cinco estrelas</label><br />
+            </div>
 
           </div>
 
           <div className="form-interna">
             <label className="titulo">Convênio:</label><br />
 
-            <input
-              type="checkbox"
-              id="amil"
-              name="convenio"
-              value="amil"
-              checked={convenio.includes('amil')}
-              onChange={handleConvenioChange}
-            />
-            <label htmlFor="amil">Amil</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="amil"
+                name="convenio"
+                value="amil"
+                checked={convenio.includes('amil')}
+                onChange={handleConvenioChange}
+              />
+              <label className="opcao" htmlFor="amil">Amil</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="bradesco"
-              name="convenio"
-              value="bradesco"
-              checked={convenio.includes('bradesco')}
-              onChange={handleConvenioChange}
-            />
-            <label htmlFor="bradesco">Bradesco</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="bradesco"
+                name="convenio"
+                value="bradesco"
+                checked={convenio.includes('bradesco')}
+                onChange={handleConvenioChange}
+              />
+              <label className="opcao" htmlFor="bradesco">Bradesco</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="norden"
-              name="convenio"
-              value="norden"
-              checked={convenio.includes('norden')}
-              onChange={handleConvenioChange}
-            />
-            <label htmlFor="norden">Norden</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="norden"
+                name="convenio"
+                value="norden"
+                checked={convenio.includes('norden')}
+                onChange={handleConvenioChange}
+              />
+              <label className="opcao" htmlFor="norden">Norden</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="portoSeguro"
-              name="convenio"
-              value="portoSeguro"
-              checked={convenio.includes('portoSeguro')}
-              onChange={handleConvenioChange}
-            />
-            <label htmlFor="portoSeguro">Porto Seguro</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="portoSeguro"
+                name="convenio"
+                value="portoSeguro"
+                checked={convenio.includes('portoSeguro')}
+                onChange={handleConvenioChange}
+              />
+              <label className="opcao" htmlFor="portoSeguro">Porto Seguro</label><br />
+            </div>
 
-            <input
-              type="checkbox"
-              id="unimed"
-              name="convenio"
-              value="unimed"
-              checked={convenio.includes('unimed')}
-              onChange={handleConvenioChange}
-            />
-            <label htmlFor="unimed">Unimed</label><br />
+            <div className="opcoes-inputs">
+              <input
+                type="checkbox"
+                id="unimed"
+                name="convenio"
+                value="unimed"
+                checked={convenio.includes('unimed')}
+                onChange={handleConvenioChange}
+              />
+              <label className="opcao" htmlFor="unimed">Unimed</label><br />
+            </div>
 
           </div>
 
