@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import './Home.css';
 import './FormularioClinica.css';
 import ListaClinicas from '../components/ListaClinicas';
 
@@ -125,7 +124,9 @@ const FormularioClinica = () => {
         </ul>
       </nav> */}
 
-      <h1>Digite as informações sobre o tipo de clínica que você quer encontrar:</h1>
+      <div>
+        <h1 className="descricao-formulario">Digite as informações sobre o tipo de clínica que você quer encontrar:</h1>
+      </div>
 
       <form onSubmit={buscarClinicas}>
 
@@ -353,6 +354,15 @@ const FormularioClinica = () => {
       </form>
 
       {clinicas.length > 0 && <ListaClinicas latitude={latitude} longitude={longitude} distancia={distancia} especialidade={especialidade} clinicas={clinicas} horario={horario} avaliacao={avaliacao} convenio={convenio} />}
+
+      <footer className="footer-home">
+        <div className="descricao">
+          Luggaris: escolha o tipo de estabelecimento que você quer encontrar para visualizar as localizações mais próximas de você!
+        </div>
+        <div className="copyright">
+          © 2024. Todos os direitos reservados.
+        </div>
+      </footer>
 
     </div>
   );

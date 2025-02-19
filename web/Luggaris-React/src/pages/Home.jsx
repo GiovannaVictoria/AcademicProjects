@@ -19,7 +19,7 @@ function Home() {
         <Link to="/formulario-clinica" className="botao-principal">Restaurantes</Link>
       </section>
 
-      <footer>
+      <footer className="footer-home">
         <div className="descricao">
           Luggaris: escolha o tipo de estabelecimento que você quer encontrar para visualizar as localizações mais próximas de você!
         </div>
