@@ -172,7 +172,7 @@ const FormularioClinica = () => {
               required />
             <br></br>
 
-            <button onClick={obterLocalizacao}>Obter Localização</button>
+            <button className="botao-localizacao" onClick={obterLocalizacao}>Obter Localização</button>
           </div>
 
           <div className="textos-inputs">
@@ -377,9 +377,9 @@ const FormularioClinica = () => {
 
         </div>
 
-        <div className="botao">
-          <input type="submit" value="Buscar Clínicas" />
-        </div>
+        <span className="botao">
+          <input className="botao-form" type="submit" value="Buscar Clínicas" />
+        </span>
 
       </form>
 
