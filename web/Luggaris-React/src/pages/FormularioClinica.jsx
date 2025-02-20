@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './FormularioClinica.css';
 import ListaClinicas from '../components/ListaClinicas';
+import Localizacao from "./Localizacao";
 
 const FormularioClinica = () => {
   const [latitude, setLatitude] = useState(undefined);
@@ -12,6 +13,7 @@ const FormularioClinica = () => {
   const [aberto24h, setAberto24h] = useState(false);
   const [avaliacao, setAvaliacao] = useState(1);
   const [convenio, setConvenio] = useState([]);
+  const [endereco, setEndereco] = useState("");
 
   const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
 
@@ -20,6 +22,7 @@ const FormularioClinica = () => {
   const handleDistanciaChange = (event) => setDistancia(event.target.value);
   const handleEspecialidadeChange = (event) => setEspecialidade(event.target.value);
   const handleAvaliacaoChange = (event) => setAvaliacao(Number(event.target.value));
+  const handleEnderecoChange = (event) => setEndereco(event.target.value);
 
   const handleConvenioChange = (e) => {
     const { value, checked } = e.target;
@@ -172,7 +175,21 @@ const FormularioClinica = () => {
               required />
             <br></br>
 
-            <button className="botao-localizacao" onClick={obterLocalizacao}>Obter Localização</button>
+            {/* <label className="titulo">Endereço:</label>
+            <p>{endereco || "Nenhum endereço encontrado"}</p> */}
+
+            <label htmlFor="endereco" className="titulo">Endereço:</label><br />
+            <input
+              type="text"
+              id="endereco"
+              name="endereco"
+              value={endereco || "Nenhum endereço encontrado"}
+              onChange={handleEnderecoChange}
+              required />
+            <br></br>
+
+            {/* <button className="botao-localizacao" onClick={obterLocalizacao}>Obter Localização</button> */}
+            <Localizacao setLatitude={setLatitude} setLongitude={setLongitude} setEndereco={setEndereco} />
           </div>
 
           <div className="textos-inputs">

@@ -11,7 +11,7 @@ function haversine(latitude1, longitude1, latitude2, longitude2) {
             Math.sin(dLon / 2) * Math.sin(dLon / 2);
   
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return raioTerra * c; 
+  return raioTerra * c;
 }
 
 const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario, avaliacao, convenio}) => {
