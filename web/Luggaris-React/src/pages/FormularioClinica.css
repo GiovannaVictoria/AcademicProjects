@@ -157,10 +157,11 @@ nav ul li {
 
 @media (max-width: 700px) {
     .botao-form {
-        font-size: 1dvw;
+        font-size: 3dvw;
     }
     .descricao-formulario {
         font-size: large;
+        padding: 2dvh;
     }
     .copyright, .descricao {
         font-size: small;
@@ -171,7 +172,10 @@ nav ul li {
     .form-interna {
         padding: 2dvh;
         text-align: center;
-    }            
+    }
+    .textos-inputs {
+        padding: 3dvh;
+    }           
     #enviar, #limpar {
         padding: 1dvh;
         font-size: small;
@@ -180,7 +184,7 @@ nav ul li {
 
 @media (min-width: 701px) and (max-width: 1000px) {
     .botao-form {
-        font-size: 1.5dvw;
+        font-size: 2.5dvw;
     }
     .descricao-formulario {
         font-size:larger;
@@ -194,7 +198,7 @@ nav ul li {
     .form-interna {
         padding: 2dvh;
         text-align: center;
-    }            
+    }
     #enviar, #limpar {
         font-size: medium;
     }            

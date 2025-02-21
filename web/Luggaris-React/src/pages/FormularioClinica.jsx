@@ -136,7 +136,7 @@ const FormularioClinica = () => {
         <div className="form-externa">
 
           <div className="textos-inputs">
-            <label htmlFor="especialidade" className="titulo">Especialidade:</label><br />
+            <label htmlFor="especialidade" className="titulo">Especialidade:</label>
             <input
               type="text"
               id="especialidade"
@@ -153,7 +153,7 @@ const FormularioClinica = () => {
 
           <div className="textos-inputs">
 
-            <label htmlFor="latitude" className="titulo">Latitude:</label><br />
+            <label htmlFor="latitude" className="titulo">Latitude:</label>
             <input
               type="number"
               id="latitude"
@@ -162,7 +162,7 @@ const FormularioClinica = () => {
               value={latitude}
               onChange={handleLatitudeChange}
               required />
-            <br></br>
+            
 
             <label htmlFor="longitude" className="titulo">Longitude:</label><br />
             <input
