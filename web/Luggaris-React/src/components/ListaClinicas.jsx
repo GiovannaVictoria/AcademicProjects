@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import "./ListaClinicas.css";
 
 // Ícone para corrigir erro de ícone padrão do Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -49,10 +50,15 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario,
   }, [latitude, longitude, distancia, especialidade, horario, avaliacao, convenio]);
 
   return (
-    <div>
-      <h2>Clínicas próximas</h2>
+    <div className="map">
+      <br /><br />
+      <hr className="divisor" />
+      <br /><br />
+
+      <h1 className="map-titulo">Clínicas próximas</h1>
+      <br />
       {loading ? <p>Carregando...</p> : (
-        <MapContainer center={[latitude, longitude]} zoom={13} style={{ height: "50dvh", width: "80%", margin: "auto", border: "solid 0.4dvh #16001e" }}>
+        <MapContainer className="map-container" center={[latitude, longitude]} zoom={13}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />

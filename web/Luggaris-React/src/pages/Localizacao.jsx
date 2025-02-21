@@ -1,3 +1,5 @@
+import "./Localizacao.css";
+
 function Localizacao({ setLatitude, setLongitude, setEndereco }) {
   const obterEndereco = async (latitude, longitude, setEndereco) => {
     const url = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`;
@@ -37,7 +39,7 @@ function Localizacao({ setLatitude, setLongitude, setEndereco }) {
     }
   };
 
-  return <button onClick={obterLocalizacao}>Obter Localização</button>;
+  return <button className="botao-localizacao" onClick={obterLocalizacao}>Obter Localização</button>;
 }
 
 export default Localizacao;

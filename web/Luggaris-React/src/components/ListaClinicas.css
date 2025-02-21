@@ -1,0 +1,36 @@
+.divisor {
+    color: #16001e;
+}
+
+.map {
+    padding-bottom: 6dvh;
+}
+
+.map-container {
+    border: solid 0.4dvh #16001e;
+    height: 90dvh;
+    margin: auto;
+    width: 80%;
+}
+
+.map-titulo {
+    color: #16001e;
+}
+
+@media (max-width: 700px) {
+    .map-titulo {
+        font-size: x-large;
+    }
+}                
+
+@media (min-width: 701px) and (max-width: 1000px) {
+    .map-titulo {
+        font-size: xx-large;
+    }      
+}                
+
+/* @media (min-width: 1001px) {
+    .map-titulo {
+        font-size: 1.5dvw;
+    }
+}             */
