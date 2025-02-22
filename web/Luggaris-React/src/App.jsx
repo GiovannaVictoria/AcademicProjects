@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import FormularioClinica from "./pages/FormularioClinica";
-import Localizacao from "./pages/Localizacao";
+import Home from "./components/Home";
+import FormularioClinica from "./components/FormularioClinica";
+import Localizacao from "./components/Localizacao";
 
 function App() {
   return (

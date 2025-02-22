@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './FormularioClinica.css';
-import ListaClinicas from '../components/ListaClinicas';
+import ListaClinicas from './ListaClinicas';
 import Localizacao from "./Localizacao";
 
 const FormularioClinica = () => {
