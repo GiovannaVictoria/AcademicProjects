@@ -49,6 +49,20 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario,
     }
   }, [latitude, longitude, distancia, especialidade, horario, avaliacao, convenio]);
 
+  const localizacaoPessoal = new L.Icon({
+    iconUrl: "/images/bolinhaAzul.png",
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40],
+  });
+
+  const localizacaoClinica = new L.Icon({
+    iconUrl: "/images/localizacaoClinica.png",
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40],
+  });
+
   return (
     <div className="map">
       <br /><br />
@@ -64,16 +78,19 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario,
           />
 
           {/* Marcador para sua localização */}
-          <Marker position={[latitude, longitude]}>
-            <Popup>Sua localização</Popup>
+          <Marker position={[latitude, longitude]} icon={localizacaoPessoal}>
+            <Popup className="popup">Sua localização</Popup>
           </Marker>
 
           {/* Marcadores das clínicas */}
           {clinicas.map(clinica => (
-            <Marker key={clinica.id} position={[clinica.latitude, clinica.longitude]}>
-              <Popup>
+            <Marker key={clinica.id} position={[clinica.latitude, clinica.longitude]} icon={localizacaoClinica}>
+              <Popup className="popup">
                 <strong>{clinica.nome}</strong><br />
-                Avaliação: {clinica.avaliacao}
+                Especialidades: {clinica.especialidades.join(", ")}<br />
+                Horários: {clinica.horarios.join(", ")}<br />
+                Avaliação: {clinica.avaliacao}<br />
+                Convênios: {clinica.convenios.join(", ")}
               </Popup>
             </Marker>
           ))}
