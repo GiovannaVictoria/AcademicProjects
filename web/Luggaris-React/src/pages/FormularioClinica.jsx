@@ -15,7 +15,7 @@ const FormularioClinica = () => {
   const [avaliacao, setAvaliacao] = useState(1);
   const [convenio, setConvenio] = useState([]);
   const [endereco, setEndereco] = useState("");
-  const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
+  const horariosOpcoes = ['manhã', 'tarde', 'noite', 'madrugada'];
 
   const handleLatitudeChange = (event) => setLatitude(event.target.value);
   const handleLongitudeChange = (event) => setLongitude(event.target.value);
@@ -57,7 +57,7 @@ const FormularioClinica = () => {
     const { checked } = e.target;
     setAberto24h(checked);
     if (checked) {
-      setHorario(['manha', 'tarde', 'noite', 'madrugada']);
+      setHorario(['manhã', 'tarde', 'noite', 'madrugada']);
     } else {
       setHorario([]);
     }
@@ -180,13 +180,13 @@ const FormularioClinica = () => {
             <div className="opcoes-inputs">
               <input
                 type="checkbox"
-                id="manha"
+                id="manhã"
                 name="horario"
-                value="manha"
+                value="manhã"
                 checked={horario.includes('manhã')}
                 onChange={handleHorarioChange}
               />
-              <label className="opcao" htmlFor="manha">Manhã</label>
+              <label className="opcao" htmlFor="manhã">Manhã</label>
             </div>
 
             <div className="opcoes-inputs">
@@ -328,13 +328,13 @@ const FormularioClinica = () => {
             <div className="opcoes-inputs">
               <input
                 type="checkbox"
-                id="portoSeguro"
+                id="Porto Seguro"
                 name="convenio"
-                value="portoSeguro"
+                value="Porto Seguro"
                 checked={convenio.includes('Porto Seguro')}
                 onChange={handleConvenioChange}
               />
-              <label className="opcao" htmlFor="portoSeguro">Porto Seguro</label><br />
+              <label className="opcao" htmlFor="Porto Seguro">Porto Seguro</label><br />
             </div>
 
             <div className="opcoes-inputs">
