@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import './FormularioClinica.css';
 import ListaClinicas from '../components/ListaClinicas';
 import Localizacao from "./Localizacao";
@@ -78,22 +79,22 @@ const FormularioClinica = () => {
 
   return (
     <div>
-      {/* <nav className="responsive-navbar">
+      <nav className="responsive-navbar">
         <label id="label-dropdown-navbar-menu" htmlFor="checkbox-dropdown-navbar-menu">
           <i className="material-icons navbar-menu-icon">
             <span className="material-symbols-outlined">menu</span>
           </i>
         </label>
         <input type="checkbox" id="checkbox-dropdown-navbar-menu" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="formularioClinica.html">Bancos</a></li>
-          <li><a href="formularioClinica.html">Farmácias</a></li>
-          <li><a href="formularioClinica.html">Hospitais</a></li>
-          <li><a href="formularioClinica.html">Hotéis</a></li>
-          <li><a href="formularioClinica.html">Restaurantes</a></li>
+        <ul className="itens-menu">
+          <li className="item-menu"><Link to="/" className="menu-hamburguer">Home</Link></li>
+          <li className="item-menu"><Link to="/formulario-clinica" className="menu-hamburguer">Clínicas</Link></li>
+          <li className="item-menu"><Link to="/formulario-clinica" className="menu-hamburguer">Farmácias</Link></li>
+          <li className="item-menu"><Link to="/formulario-clinica" className="menu-hamburguer">Hospitais</Link></li>
+          <li className="item-menu"><Link to="/formulario-clinica" className="menu-hamburguer">Hotéis</Link></li>
+          <li className="item-menu"><Link to="/formulario-clinica" className="menu-hamburguer">Restaurantes</Link></li>
         </ul>
-      </nav> */}
+      </nav>
 
       <div>
         <h1 className="descricao-formulario">Digite as informações sobre o tipo de clínica que você quer encontrar:</h1>
