@@ -4,31 +4,34 @@
             "id": 1,
             "nome": "Clínica Saúde Total",
             "especialidades": ["cardiologia", "dermatologia"],
-            "horarios": ["manha", "tarde", "noite", "madrugada"],
-            "avaliacao": 5,
-            "convenios": ["amil", "bradesco", "norden"],
+            "horarios": ["manhã", "tarde", "noite", "madrugada"],
+            "avaliacao": 1,
+            "convenios": ["Amil", "Bradesco", "Norden"],
             "latitude": -23.5505,
-            "longitude": -46.6333
+            "longitude": -46.6333,
+            "endereco": "Rua Margarida, Jardins - São Paulo, São Paulo"
         },
         {
             "id": 2,
             "nome": "Clínica Bem-Estar",
             "especialidades": ["cardiologia", "dermatologia"],
-            "horarios": ["manha", "tarde", "noite", "madrugada"],
+            "horarios": ["manhã", "tarde", "noite", "madrugada"],
             "avaliacao": 5,
-            "convenios": ["bradesco", "norden", "portoSeguro"],
+            "convenios": ["Bradesco", "Norden", "Porto Seguro"],
             "latitude": -23.5510,
-            "longitude": -46.6320
+            "longitude": -46.6320,
+            "endereco": "Rua Hortência, Jardins - São Paulo, São Paulo"
         },
         {
             "id": 3,
             "nome": "Clínica Vida Leve",
             "especialidades": ["cardiologia", "dermatologia"],
-            "horarios": ["manha", "tarde", "noite", "madrugada"],
+            "horarios": ["manhã", "tarde", "noite", "madrugada"],
             "avaliacao": 5,
-            "convenios": ["norden", "portoSeguro", "unimed"],
+            "convenios": ["Norden", "Porto Seguro", "Unimed"],
             "latitude": -23.5495,
-            "longitude": -46.6340
+            "longitude": -46.6340,
+            "endereco": "Rua Orquídea, Jardins - São Paulo, São Paulo"
         }
     ]
 }

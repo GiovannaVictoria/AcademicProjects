@@ -89,8 +89,9 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario,
                 <strong>{clinica.nome}</strong><br />
                 Especialidades: {clinica.especialidades.join(", ")}<br />
                 Horários: {clinica.horarios.join(", ")}<br />
-                Avaliação: {clinica.avaliacao}<br />
-                Convênios: {clinica.convenios.join(", ")}
+                Convênios: {clinica.convenios.join(", ")}<br />
+                Avaliação: {clinica.avaliacao} {clinica.avaliacao === 1 ? "estrela" : "estrelas"}<br />
+                Endereço: {clinica.endereco}
               </Popup>
             </Marker>
           ))}

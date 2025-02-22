@@ -224,7 +224,7 @@ const FormularioClinica = () => {
                 id="manha"
                 name="horario"
                 value="manha"
-                checked={horario.includes('manha')}
+                checked={horario.includes('manhã')}
                 onChange={handleHorarioChange}
               />
               <label className="opcao" htmlFor="manha">Manhã</label>
@@ -336,7 +336,7 @@ const FormularioClinica = () => {
                 id="amil"
                 name="convenio"
                 value="amil"
-                checked={convenio.includes('amil')}
+                checked={convenio.includes('Amil')}
                 onChange={handleConvenioChange}
               />
               <label className="opcao" htmlFor="amil">Amil</label><br />
@@ -348,7 +348,7 @@ const FormularioClinica = () => {
                 id="bradesco"
                 name="convenio"
                 value="bradesco"
-                checked={convenio.includes('bradesco')}
+                checked={convenio.includes('Bradesco')}
                 onChange={handleConvenioChange}
               />
               <label className="opcao" htmlFor="bradesco">Bradesco</label><br />
@@ -360,7 +360,7 @@ const FormularioClinica = () => {
                 id="norden"
                 name="convenio"
                 value="norden"
-                checked={convenio.includes('norden')}
+                checked={convenio.includes('Norden')}
                 onChange={handleConvenioChange}
               />
               <label className="opcao" htmlFor="norden">Norden</label><br />
@@ -372,7 +372,7 @@ const FormularioClinica = () => {
                 id="portoSeguro"
                 name="convenio"
                 value="portoSeguro"
-                checked={convenio.includes('portoSeguro')}
+                checked={convenio.includes('Porto Seguro')}
                 onChange={handleConvenioChange}
               />
               <label className="opcao" htmlFor="portoSeguro">Porto Seguro</label><br />
@@ -384,7 +384,7 @@ const FormularioClinica = () => {
                 id="unimed"
                 name="convenio"
                 value="unimed"
-                checked={convenio.includes('unimed')}
+                checked={convenio.includes('Unimed')}
                 onChange={handleConvenioChange}
               />
               <label className="opcao" htmlFor="unimed">Unimed</label><br />
