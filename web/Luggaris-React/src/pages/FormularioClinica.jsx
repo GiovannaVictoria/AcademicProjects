@@ -14,7 +14,6 @@ const FormularioClinica = () => {
   const [avaliacao, setAvaliacao] = useState(1);
   const [convenio, setConvenio] = useState([]);
   const [endereco, setEndereco] = useState("");
-
   const horariosOpcoes = ['manha', 'tarde', 'noite', 'madrugada'];
 
   const handleLatitudeChange = (event) => setLatitude(event.target.value);
@@ -37,7 +36,6 @@ const FormularioClinica = () => {
 
   const handleHorarioChange = (e) => {
     const { value, checked } = e.target;
-
     setHorario((prevHorario) => {
       let newHorario;
       if (checked) {
@@ -45,13 +43,11 @@ const FormularioClinica = () => {
       } else {
         newHorario = prevHorario.filter((item) => item !== value);
       }
-
       if (newHorario.length === horariosOpcoes.length) {
         setAberto24h(true);
       } else {
         setAberto24h(false);
       }
-
       return newHorario;
     });
   };
@@ -59,7 +55,6 @@ const FormularioClinica = () => {
   const handleAberto24hChange = (e) => {
     const { checked } = e.target;
     setAberto24h(checked);
-
     if (checked) {
       setHorario(['manha', 'tarde', 'noite', 'madrugada']);
     } else {
@@ -67,41 +62,14 @@ const FormularioClinica = () => {
     }
   };
 
-  const obterLocalizacao = (event) => {
-    event.preventDefault();
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setLatitude(position.coords.latitude);
-          setLongitude(position.coords.longitude);
-        },
-        (error) => {
-          alert('Erro ao obter localização: ' + error.message);
-        }
-      );
-    } else {
-      alert('Geolocalização não é suportada neste navegador.');
-    }
-  };
-
   const buscarClinicas = async (event) => {
     event.preventDefault();
-
-    // Captura os valores do formulário
-    const especialidade = event.target.especialidade.value;
-    const distancia = event.target.distancia.value;
-
-    // Monta a URL para buscar as clínicas no json-server
     const url = `http://localhost:5000/clinicas`;
 
     try {
-      // alert("c");
       const resposta = await fetch(url);
       if (!resposta.ok) throw new Error('Erro ao buscar clínicas');
-
-      alert(resposta);
       const dados = await resposta.json();
-      alert(dados);
       setClinicas(dados);
     } catch (erro) {
       alert('Erro ao buscar clínicas: ' + erro.message);
@@ -145,12 +113,6 @@ const FormularioClinica = () => {
               required />
           </div>
 
-          {/* <div className="form-interna">
-            <label htmlFor="enderecoProximo" className="titulo">Próximo à localização:</label><br />
-            <input type="text" id="enderecoProximo" name="enderecoProximo" value={localizacao} readOnly />
-            <button onClick={obterLocalizacao}>Obter Localização</button>
-          </div> */}
-
           <div className="textos-inputs">
 
             <label htmlFor="latitude" className="titulo">Latitude:</label>
@@ -175,9 +137,6 @@ const FormularioClinica = () => {
               required />
             <br></br>
 
-            {/* <label className="titulo">Endereço:</label>
-            <p>{endereco || "Nenhum endereço encontrado"}</p> */}
-
             <label htmlFor="endereco" className="titulo">Endereço:</label><br />
             <input
               type="text"
@@ -188,7 +147,6 @@ const FormularioClinica = () => {
               required />
             <br></br>
 
-            {/* <button className="botao-localizacao" onClick={obterLocalizacao}>Obter Localização</button> */}
             <Localizacao setLatitude={setLatitude} setLongitude={setLongitude} setEndereco={setEndereco} />
           </div>
 

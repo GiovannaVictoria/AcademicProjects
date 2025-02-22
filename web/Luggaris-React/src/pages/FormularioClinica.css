@@ -64,25 +64,8 @@ nav ul li {
     transition: background-color 0.4s, border-color 0.4s;
 }
 
-.botao-localizacao {
-    background-color: #D3C1D2;
-    border: 0.3dvh solid #16001e;
-    border-radius: 2dvh;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
-    color: #16001e;
-    cursor: pointer;
-    display: inline-block;
-    justify-self: center;
-    padding: 1dvh 2dvh;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.4s, border-color 0.4s;
-}
-
 .botao-form:hover,
-.botao-form:hover a,
-.botao-localizacao:hover,
-.botao-localizacao:hover a {
+.botao-form:hover a {
     background-color: #16001e;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
     color: #D3C1D2;

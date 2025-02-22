@@ -4,7 +4,6 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./ListaClinicas.css";
 
-// Ícone para corrigir erro de ícone padrão do Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
@@ -77,12 +76,10 @@ const ListaClinicas = ({ latitude, longitude, distancia, especialidade, horario,
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {/* Marcador para sua localização */}
           <Marker position={[latitude, longitude]} icon={localizacaoPessoal}>
             <Popup className="popup">Sua localização</Popup>
           </Marker>
 
-          {/* Marcadores das clínicas */}
           {clinicas.map(clinica => (
             <Marker key={clinica.id} position={[clinica.latitude, clinica.longitude]} icon={localizacaoClinica}>
               <Popup className="popup">
